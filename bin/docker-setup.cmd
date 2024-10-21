@@ -25,4 +25,4 @@ val dockerDir = Os.tempDir()
 val dockerFile = dockerDir / "Dockerfile"
 dockerFile.write(content.render)
 
-proc"docker build -t sireum.container .".at(dockerDir).console.runCheck()
+proc"docker build -t camkes.sireum .".at(dockerDir).console.runCheck()
