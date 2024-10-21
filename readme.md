@@ -55,6 +55,6 @@ Build and simulate the CAmkES image via docker
 ```bash
 cd sysmlv2-models/models/temp-control/sysml-temp-control-mixed-sel4-camkes
 docker run --rm -it -w /root -v $(pwd):/root/sysml camkes.sireum sh -c \
-    "/root/sysml/hamr/camkes/bin/ run-camkes.sh -c /root/camkes -s"
+    "/root/sysml/hamr/camkes/bin/run-camkes.sh -c /root/camkes -s"
 ```
 
