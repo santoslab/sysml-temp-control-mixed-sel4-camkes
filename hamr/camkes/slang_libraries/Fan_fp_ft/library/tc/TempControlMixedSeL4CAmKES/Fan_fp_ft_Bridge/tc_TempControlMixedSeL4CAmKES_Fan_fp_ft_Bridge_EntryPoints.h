@@ -1,0 +1,58 @@
+#ifndef SIREUM_H_tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints
+#define SIREUM_H_tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+// tc.TempControlMixedSeL4CAmKES.Fan_fp_ft_Bridge.EntryPoints
+
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_Fan_fp_ft_BridgeId_(this) ((this)->Fan_fp_ft_BridgeId)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_fanCmd_Id_(this) ((this)->fanCmd_Id)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_fanAck_Id_(this) ((this)->fanAck_Id)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_dispatchTriggers_(this) ((Option_0247A1) &(this)->dispatchTriggers)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_initialization_api_(this) ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &(this)->initialization_api)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_operational_api_(this) ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &(this)->operational_api)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_dataInPortIds_(this) ((IS_D10119) &(this)->dataInPortIds)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_eventInPortIds_(this) ((IS_D10119) &(this)->eventInPortIds)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_dataOutPortIds_(this) ((IS_D10119) &(this)->dataOutPortIds)
+#define tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_eventOutPortIds_(this) ((IS_D10119) &(this)->eventOutPortIds)
+
+B tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__eq(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints other);
+inline B tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__ne(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints other) {
+  return !tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__eq(this, other);
+};
+B tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__equiv(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints other);
+inline B tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__inequiv(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints other) {
+  return !tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__equiv(this, other);
+};
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_string_(STACK_FRAME String result, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this);
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_cprint(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, B isOut);
+
+inline B tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__is(STACK_FRAME void* this) {
+  return ((tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints) this)->type == Ttc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints;
+}
+
+inline tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__as(STACK_FRAME void *this) {
+  if (tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints__is(CALLER this)) return (tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints) this;
+  sfAbortImpl(CALLER "Invalid cast to tc.TempControlMixedSeL4CAmKES.Fan_fp_ft_Bridge.EntryPoints.");
+  abort();
+}
+
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_apply(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, art_Art_BridgeId Fan_fp_ft_BridgeId, art_Art_PortId fanCmd_Id, art_Art_PortId fanAck_Id, Option_0247A1 dispatchTriggers, tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api initialization_api, tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api operational_api);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_initialise_(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this);
+
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_filter_(STACK_FRAME IS_D10119 result, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this, IS_D10119 receivedEvents, IS_D10119 triggers);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_compute_(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints_finalise_(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_EntryPoints this);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

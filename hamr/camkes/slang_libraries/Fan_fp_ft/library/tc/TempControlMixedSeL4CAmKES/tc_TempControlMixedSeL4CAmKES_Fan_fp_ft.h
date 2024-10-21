@@ -1,0 +1,29 @@
+#ifndef SIREUM_H_tc_TempControlMixedSeL4CAmKES_Fan_fp_ft
+#define SIREUM_H_tc_TempControlMixedSeL4CAmKES_Fan_fp_ft
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_init(STACK_FRAME_ONLY);
+
+Random_Gen64Impl tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_rand(STACK_FRAME_ONLY);
+Z tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_errorRate(STACK_FRAME_ONLY);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_initialise(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api api);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_handle_fanCmd(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api api, tc_TempControlMixedSeL4CAmKES_FanCmd_Type value);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_finalise(STACK_FRAME tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api api);
+
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_init_rand(STACK_FRAME_ONLY);
+
+void tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_init_errorRate(STACK_FRAME_ONLY);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

@@ -1,0 +1,30 @@
+#ifndef SIREUM_H_tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix
+#define SIREUM_H_tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+Unit tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_fanCmd_Send(STACK_FRAME art_DataContent d);
+
+B tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_tempChanged_IsEmpty(STACK_FRAME_ONLY);
+
+B tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_fanAck_IsEmpty(STACK_FRAME_ONLY);
+
+B tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_setPoint_IsEmpty(STACK_FRAME_ONLY);
+
+void tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_currentTemp_Receive(STACK_FRAME Option_8E9F45 result);
+
+void tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_tempChanged_Receive(STACK_FRAME Option_8E9F45 result);
+
+void tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_fanAck_Receive(STACK_FRAME Option_8E9F45 result);
+
+void tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_seL4Nix_setPoint_Receive(STACK_FRAME Option_8E9F45 result);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif

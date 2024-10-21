@@ -1,0 +1,1 @@
+../../../../c/etc_seL4/adapters/TempSensor_tsp_tst/TempSensor_tsp_tst_adapter.c

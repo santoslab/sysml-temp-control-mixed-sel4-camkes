@@ -1,0 +1,66 @@
+#ifndef SIREUM_H_tc_TempSensor_tsp_tst_tst
+#define SIREUM_H_tc_TempSensor_tsp_tst_tst
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <types.h>
+
+void tc_TempSensor_tsp_tst_tst_init(STACK_FRAME_ONLY);
+
+tc_TempControlMixedSeL4CAmKES_TempSensor_tsp_tst_Bridge tc_TempSensor_tsp_tst_tst_tstBridge(STACK_FRAME_ONLY);
+art_Bridge_EntryPoints tc_TempSensor_tsp_tst_tst_entryPoints(STACK_FRAME_ONLY);
+Option_8E9F45 tc_TempSensor_tsp_tst_tst_noData(STACK_FRAME_ONLY);
+art_Art_PortId tc_TempSensor_tsp_tst_tst_currentTemp_id(STACK_FRAME_ONLY);
+Option_8E9F45 tc_TempSensor_tsp_tst_tst_currentTemp_port(STACK_FRAME_ONLY);
+void tc_TempSensor_tsp_tst_tst_currentTemp_port_a(STACK_FRAME Option_8E9F45 p_currentTemp_port);
+art_Art_PortId tc_TempSensor_tsp_tst_tst_tempChanged_id(STACK_FRAME_ONLY);
+Option_8E9F45 tc_TempSensor_tsp_tst_tst_tempChanged_port(STACK_FRAME_ONLY);
+void tc_TempSensor_tsp_tst_tst_tempChanged_port_a(STACK_FRAME Option_8E9F45 p_tempChanged_port);
+
+Z tc_TempSensor_tsp_tst_tst_main(STACK_FRAME IS_948B60 args);
+
+Unit tc_TempSensor_tsp_tst_tst_initialiseArchitecture(STACK_FRAME_ONLY);
+
+Unit tc_TempSensor_tsp_tst_tst_initialiseEntryPoint(STACK_FRAME_ONLY);
+
+Unit tc_TempSensor_tsp_tst_tst_computeEntryPoint(STACK_FRAME_ONLY);
+
+Unit tc_TempSensor_tsp_tst_tst_finaliseEntryPoint(STACK_FRAME_ONLY);
+
+Unit tc_TempSensor_tsp_tst_tst_touch_printDataContent(STACK_FRAME art_DataContent a);
+
+Unit tc_TempSensor_tsp_tst_tst_touch(STACK_FRAME_ONLY);
+
+Unit tc_TempSensor_tsp_tst_tst_logInfo(STACK_FRAME String title, String msg);
+
+Unit tc_TempSensor_tsp_tst_tst_logDebug(STACK_FRAME String title, String msg);
+
+Unit tc_TempSensor_tsp_tst_tst_logError(STACK_FRAME String title, String msg);
+
+Unit tc_TempSensor_tsp_tst_tst_putValue(STACK_FRAME art_Art_PortId portId, art_DataContent data);
+
+Unit tc_TempSensor_tsp_tst_tst_sendOutput(STACK_FRAME IS_D10119 eventPortIds, IS_D10119 dataPortIds);
+
+Unit tc_TempSensor_tsp_tst_tst_receiveInput(STACK_FRAME IS_D10119 eventPortIds, IS_D10119 dataPortIds);
+
+void tc_TempSensor_tsp_tst_tst_init_tstBridge(STACK_FRAME_ONLY);
+
+void tc_TempSensor_tsp_tst_tst_init_entryPoints(STACK_FRAME_ONLY);
+
+void tc_TempSensor_tsp_tst_tst_init_noData(STACK_FRAME_ONLY);
+
+void tc_TempSensor_tsp_tst_tst_init_currentTemp_id(STACK_FRAME_ONLY);
+
+void tc_TempSensor_tsp_tst_tst_init_currentTemp_port(STACK_FRAME_ONLY);
+
+void tc_TempSensor_tsp_tst_tst_init_tempChanged_id(STACK_FRAME_ONLY);
+
+void tc_TempSensor_tsp_tst_tst_init_tempChanged_port(STACK_FRAME_ONLY);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
