@@ -178,7 +178,7 @@ extern "C" {
 #include <type-tc_TempControlPeriodic_TempUnit_Payload.h>
 #include <type-tc_TempControlPeriodic_Temperature.h>
 #include <type-tc_TempControlPeriodic_Temperature_Payload.h>
-#include <type-tc_TempSensor_tsp_tst_tst.h>
+#include <type-tc_TempSensor_tsp_tst_tst_seL4App.h>
 #include <type-tc_TranspilerToucher.h>
 
 #if defined(static_assert)

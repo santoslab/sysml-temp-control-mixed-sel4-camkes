@@ -45,7 +45,8 @@ Rerun codegen targeting seL4
 cd sysmlv2-models/models/temp-control/sysml-temp-control-mixed-sel4-camkes
 ./bin/run-hamr.cmd seL4
 
-# add the missing stack size configuration entry for the temp control
+# Add the missing stack size configuration entry for the temp control, otherwise
+# the temp control app will crash due to it exceeding the default 4K stack size.
 ./bin/fix-stacksize.cmd
 ```
 Refer [here](TempControlMixedCamkes.sysml#L103) for more information regarding stack size.

@@ -1,7 +1,7 @@
 #include <all.h>
 
 int main(int argc, char *argv[]) {
-  DeclNewStackFrame(NULL, "ft.scala", "tc.Fan_fp_ft.ft", "<App>", 0);
+  DeclNewStackFrame(NULL, "ft_seL4App.scala", "tc.Fan_fp_ft.ft_seL4App", "<App>", 0);
 
   DeclNewIS_948B60(t_args);
 
@@ -23,5 +23,5 @@ int main(int argc, char *argv[]) {
     memcpy(IS_948B60_at(&t_args, i)->value, arg, argSize + 1);
   }
 
-  return (int) tc_Fan_fp_ft_ft_main(SF &t_args);
+  return (int) tc_Fan_fp_ft_ft_seL4App_main(SF &t_args);
 }

@@ -120,7 +120,7 @@ extern "C" {
 #include <tc_Base_Types_Unsigned_32_Payload.h>
 #include <tc_Base_Types_Unsigned_64_Payload.h>
 #include <tc_Base_Types_Unsigned_8_Payload.h>
-#include <tc_Fan_fp_ft_ft.h>
+#include <tc_Fan_fp_ft_ft_seL4App.h>
 #include <tc_Isolette_Data_Model_Failure_Flag.h>
 #include <tc_Isolette_Data_Model_Failure_Flag_Payload.h>
 #include <tc_Isolette_Data_Model_Monitor_Mode_Type.h>

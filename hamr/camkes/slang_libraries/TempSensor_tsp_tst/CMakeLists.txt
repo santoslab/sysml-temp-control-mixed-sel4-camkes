@@ -97,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(TempSensor_tsp_tst STATIC
-        runtime/type.h
+        runtime/misc.c
+        runtime/stackframe.h
         runtime/misc.h
         runtime/type.c
-        runtime/stackframe.h
+        runtime/type.h
         runtime/lib.h
         runtime/stackframe.c
-        runtime/misc.c
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -624,9 +624,9 @@ add_library(TempSensor_tsp_tst STATIC
         library/tc/TempControlPeriodic/type-tc_TempControlPeriodic_Temperature_Payload.h
         library/tc/TempControlPeriodic/tc_TempControlPeriodic_Temperature_Payload.h
         library/tc/TempControlPeriodic/tc_TempControlPeriodic_Temperature_Payload.c
-        library/tc/TempSensor_tsp_tst/type-tc_TempSensor_tsp_tst_tst.h
-        library/tc/TempSensor_tsp_tst/tc_TempSensor_tsp_tst_tst.h
-        library/tc/TempSensor_tsp_tst/tc_TempSensor_tsp_tst_tst.c
+        library/tc/TempSensor_tsp_tst/type-tc_TempSensor_tsp_tst_tst_seL4App.h
+        library/tc/TempSensor_tsp_tst/tc_TempSensor_tsp_tst_tst_seL4App.h
+        library/tc/TempSensor_tsp_tst/tc_TempSensor_tsp_tst_tst_seL4App.c
         library/tc/type-tc_TranspilerToucher.h
         library/tc/tc_TranspilerToucher.h
         library/tc/tc_TranspilerToucher.c
@@ -636,7 +636,7 @@ add_library(TempSensor_tsp_tst STATIC
         ext/TempSensor_tsp_tst_adapter.c)
 
 target_include_directories(TempSensor_tsp_tst
-        PUBLIC PUBLIC app-tst
+        PUBLIC PUBLIC app-tst_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/art
         PUBLIC PUBLIC library/art/Art

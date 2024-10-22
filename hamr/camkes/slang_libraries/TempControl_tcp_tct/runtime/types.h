@@ -185,7 +185,7 @@ extern "C" {
 #include <type-tc_TempControlPeriodic_TempUnit_Payload.h>
 #include <type-tc_TempControlPeriodic_Temperature.h>
 #include <type-tc_TempControlPeriodic_Temperature_Payload.h>
-#include <type-tc_TempControl_tcp_tct_tct.h>
+#include <type-tc_TempControl_tcp_tct_tct_seL4App.h>
 #include <type-tc_TranspilerToucher.h>
 
 #if defined(static_assert)

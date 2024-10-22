@@ -13,7 +13,7 @@ import art.PortMode._
 import tc._
 import tc.TempControlMixedSeL4CAmKES.TempSensor_tsp_tst_seL4Nix
 
-object tst extends App {
+object tst_seL4App extends App {
 
   val tstBridge : tc.TempControlMixedSeL4CAmKES.TempSensor_tsp_tst_Bridge = {
     val currentTemp = Port[TempControlMixedSeL4CAmKES.Temperature] (id = portId"0", name = "TempControlSystem_Instance_tsp_tst_currentTemp", mode = DataOut)

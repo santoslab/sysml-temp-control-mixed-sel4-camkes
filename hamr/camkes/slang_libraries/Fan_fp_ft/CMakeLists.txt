@@ -97,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(Fan_fp_ft STATIC
-        runtime/type.h
+        runtime/misc.c
+        runtime/stackframe.h
         runtime/misc.h
         runtime/type.c
-        runtime/stackframe.h
+        runtime/type.h
         runtime/lib.h
         runtime/stackframe.c
-        runtime/misc.c
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -451,9 +451,9 @@ add_library(Fan_fp_ft STATIC
         library/tc/Base_Types/type-tc_Base_Types_Unsigned_8_Payload.h
         library/tc/Base_Types/tc_Base_Types_Unsigned_8_Payload.h
         library/tc/Base_Types/tc_Base_Types_Unsigned_8_Payload.c
-        library/tc/Fan_fp_ft/type-tc_Fan_fp_ft_ft.h
-        library/tc/Fan_fp_ft/tc_Fan_fp_ft_ft.h
-        library/tc/Fan_fp_ft/tc_Fan_fp_ft_ft.c
+        library/tc/Fan_fp_ft/type-tc_Fan_fp_ft_ft_seL4App.h
+        library/tc/Fan_fp_ft/tc_Fan_fp_ft_ft_seL4App.h
+        library/tc/Fan_fp_ft/tc_Fan_fp_ft_ft_seL4App.c
         library/tc/Isolette_Data_Model/type-tc_Isolette_Data_Model_Failure_Flag.h
         library/tc/Isolette_Data_Model/tc_Isolette_Data_Model_Failure_Flag.h
         library/tc/Isolette_Data_Model/tc_Isolette_Data_Model_Failure_Flag.c
@@ -645,7 +645,7 @@ add_library(Fan_fp_ft STATIC
         ext/Fan_fp_ft_adapter.c)
 
 target_include_directories(Fan_fp_ft
-        PUBLIC PUBLIC app-ft
+        PUBLIC PUBLIC app-ft_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/art
         PUBLIC PUBLIC library/art/Art

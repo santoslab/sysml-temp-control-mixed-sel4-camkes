@@ -1,7 +1,7 @@
 #include <all.h>
 
 int main(int argc, char *argv[]) {
-  DeclNewStackFrame(NULL, "tst.scala", "tc.TempSensor_tsp_tst.tst", "<App>", 0);
+  DeclNewStackFrame(NULL, "tst_seL4App.scala", "tc.TempSensor_tsp_tst.tst_seL4App", "<App>", 0);
 
   DeclNewIS_948B60(t_args);
 
@@ -23,5 +23,5 @@ int main(int argc, char *argv[]) {
     memcpy(IS_948B60_at(&t_args, i)->value, arg, argSize + 1);
   }
 
-  return (int) tc_TempSensor_tsp_tst_tst_main(SF &t_args);
+  return (int) tc_TempSensor_tsp_tst_tst_seL4App_main(SF &t_args);
 }

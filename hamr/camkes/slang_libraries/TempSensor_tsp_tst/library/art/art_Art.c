@@ -42,13 +42,13 @@ Unit art_Art_logInfo(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
       Option_7BBFBE_get_(SF (art_Bridge) &t_4, MS_83D5EB_at(art_Art_bridges(SF_LAST), t_3));
       DeclNewString(t_5);
       art_Bridge_name_(SF (String) &t_5, ((art_Bridge) &t_4));
-      tc_TempSensor_tsp_tst_tst_logInfo(SF (String) ((String) &t_5), (String) msg);
+      tc_TempSensor_tsp_tst_tst_seL4App_logInfo(SF (String) ((String) &t_5), (String) msg);
     }
   } else {
 
     sfUpdateLoc(103);
     {
-      tc_TempSensor_tsp_tst_tst_logInfo(SF (String) string(""), (String) msg);
+      tc_TempSensor_tsp_tst_tst_seL4App_logInfo(SF (String) string(""), (String) msg);
     }
   }
 }
@@ -72,13 +72,13 @@ Unit art_Art_logDebug(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
       Option_7BBFBE_get_(SF (art_Bridge) &t_4, MS_83D5EB_at(art_Art_bridges(SF_LAST), t_3));
       DeclNewString(t_5);
       art_Bridge_name_(SF (String) &t_5, ((art_Bridge) &t_4));
-      tc_TempSensor_tsp_tst_tst_logDebug(SF (String) ((String) &t_5), (String) msg);
+      tc_TempSensor_tsp_tst_tst_seL4App_logDebug(SF (String) ((String) &t_5), (String) msg);
     }
   } else {
 
     sfUpdateLoc(119);
     {
-      tc_TempSensor_tsp_tst_tst_logDebug(SF (String) string(""), (String) msg);
+      tc_TempSensor_tsp_tst_tst_seL4App_logDebug(SF (String) string(""), (String) msg);
     }
   }
 }
@@ -102,13 +102,13 @@ Unit art_Art_logError(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
       Option_7BBFBE_get_(SF (art_Bridge) &t_4, MS_83D5EB_at(art_Art_bridges(SF_LAST), t_3));
       DeclNewString(t_5);
       art_Bridge_name_(SF (String) &t_5, ((art_Bridge) &t_4));
-      tc_TempSensor_tsp_tst_tst_logError(SF (String) ((String) &t_5), (String) msg);
+      tc_TempSensor_tsp_tst_tst_seL4App_logError(SF (String) ((String) &t_5), (String) msg);
     }
   } else {
 
     sfUpdateLoc(111);
     {
-      tc_TempSensor_tsp_tst_tst_logError(SF (String) string(""), (String) msg);
+      tc_TempSensor_tsp_tst_tst_seL4App_logError(SF (String) string(""), (String) msg);
     }
   }
 }
@@ -118,7 +118,7 @@ Unit art_Art_putValue(STACK_FRAME art_Art_PortId portId, art_DataContent data) {
 
   sfUpdateLoc(84);
   {
-    tc_TempSensor_tsp_tst_tst_putValue(SF portId, (art_DataContent) data);
+    tc_TempSensor_tsp_tst_tst_seL4App_putValue(SF portId, (art_DataContent) data);
   }
 }
 
@@ -127,7 +127,7 @@ Unit art_Art_sendOutput(STACK_FRAME IS_D10119 eventPortIds, IS_D10119 dataPortId
 
   sfUpdateLoc(92);
   {
-    tc_TempSensor_tsp_tst_tst_sendOutput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
+    tc_TempSensor_tsp_tst_tst_seL4App_sendOutput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
   }
 }
 
@@ -136,7 +136,7 @@ Unit art_Art_receiveInput(STACK_FRAME IS_D10119 eventPortIds, IS_D10119 dataPort
 
   sfUpdateLoc(80);
   {
-    tc_TempSensor_tsp_tst_tst_receiveInput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
+    tc_TempSensor_tsp_tst_tst_seL4App_receiveInput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
   }
 }
 

@@ -42,13 +42,13 @@ Unit art_Art_logInfo(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
       Option_7BBFBE_get_(SF (art_Bridge) &t_4, MS_83D5EB_at(art_Art_bridges(SF_LAST), t_3));
       DeclNewString(t_5);
       art_Bridge_name_(SF (String) &t_5, ((art_Bridge) &t_4));
-      tc_Fan_fp_ft_ft_logInfo(SF (String) ((String) &t_5), (String) msg);
+      tc_Fan_fp_ft_ft_seL4App_logInfo(SF (String) ((String) &t_5), (String) msg);
     }
   } else {
 
     sfUpdateLoc(103);
     {
-      tc_Fan_fp_ft_ft_logInfo(SF (String) string(""), (String) msg);
+      tc_Fan_fp_ft_ft_seL4App_logInfo(SF (String) string(""), (String) msg);
     }
   }
 }
@@ -72,13 +72,13 @@ Unit art_Art_logDebug(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
       Option_7BBFBE_get_(SF (art_Bridge) &t_4, MS_83D5EB_at(art_Art_bridges(SF_LAST), t_3));
       DeclNewString(t_5);
       art_Bridge_name_(SF (String) &t_5, ((art_Bridge) &t_4));
-      tc_Fan_fp_ft_ft_logDebug(SF (String) ((String) &t_5), (String) msg);
+      tc_Fan_fp_ft_ft_seL4App_logDebug(SF (String) ((String) &t_5), (String) msg);
     }
   } else {
 
     sfUpdateLoc(119);
     {
-      tc_Fan_fp_ft_ft_logDebug(SF (String) string(""), (String) msg);
+      tc_Fan_fp_ft_ft_seL4App_logDebug(SF (String) string(""), (String) msg);
     }
   }
 }
@@ -102,13 +102,13 @@ Unit art_Art_logError(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
       Option_7BBFBE_get_(SF (art_Bridge) &t_4, MS_83D5EB_at(art_Art_bridges(SF_LAST), t_3));
       DeclNewString(t_5);
       art_Bridge_name_(SF (String) &t_5, ((art_Bridge) &t_4));
-      tc_Fan_fp_ft_ft_logError(SF (String) ((String) &t_5), (String) msg);
+      tc_Fan_fp_ft_ft_seL4App_logError(SF (String) ((String) &t_5), (String) msg);
     }
   } else {
 
     sfUpdateLoc(111);
     {
-      tc_Fan_fp_ft_ft_logError(SF (String) string(""), (String) msg);
+      tc_Fan_fp_ft_ft_seL4App_logError(SF (String) string(""), (String) msg);
     }
   }
 }
@@ -116,7 +116,7 @@ Unit art_Art_logError(STACK_FRAME art_Art_BridgeId bridgeId, String msg) {
 void art_Art_getValue(STACK_FRAME Option_8E9F45 result, art_Art_PortId portId) {
   DeclNewStackFrame(caller, "Art.scala", "art.Art", "getValue", 0);
   DeclNewOption_8E9F45(t_0);
-  tc_Fan_fp_ft_ft_getValue(SF (Option_8E9F45) &t_0, portId);
+  tc_Fan_fp_ft_ft_seL4App_getValue(SF (Option_8E9F45) &t_0, portId);
   Type_assign(result, ((Option_8E9F45) &t_0), sizeof(union Option_8E9F45));
   return;
 }
@@ -126,7 +126,7 @@ Unit art_Art_putValue(STACK_FRAME art_Art_PortId portId, art_DataContent data) {
 
   sfUpdateLoc(84);
   {
-    tc_Fan_fp_ft_ft_putValue(SF portId, (art_DataContent) data);
+    tc_Fan_fp_ft_ft_seL4App_putValue(SF portId, (art_DataContent) data);
   }
 }
 
@@ -135,14 +135,14 @@ Unit art_Art_sendOutput(STACK_FRAME IS_D10119 eventPortIds, IS_D10119 dataPortId
 
   sfUpdateLoc(92);
   {
-    tc_Fan_fp_ft_ft_sendOutput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
+    tc_Fan_fp_ft_ft_seL4App_sendOutput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
   }
 }
 
 void art_Art_dispatchStatus(STACK_FRAME art_DispatchStatus result, art_Art_BridgeId bridgeId) {
   DeclNewStackFrame(caller, "Art.scala", "art.Art", "dispatchStatus", 0);
   DeclNewart_DispatchStatus(t_0);
-  tc_Fan_fp_ft_ft_dispatchStatus(SF (art_DispatchStatus) &t_0, bridgeId);
+  tc_Fan_fp_ft_ft_seL4App_dispatchStatus(SF (art_DispatchStatus) &t_0, bridgeId);
   Type_assign(result, ((art_DispatchStatus) &t_0), sizeof(union art_DispatchStatus));
   return;
 }
@@ -152,7 +152,7 @@ Unit art_Art_receiveInput(STACK_FRAME IS_D10119 eventPortIds, IS_D10119 dataPort
 
   sfUpdateLoc(80);
   {
-    tc_Fan_fp_ft_ft_receiveInput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
+    tc_Fan_fp_ft_ft_seL4App_receiveInput(SF (IS_D10119) eventPortIds, (IS_D10119) dataPortIds);
   }
 }
 

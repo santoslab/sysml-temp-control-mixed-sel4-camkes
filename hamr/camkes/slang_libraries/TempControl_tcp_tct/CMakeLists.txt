@@ -97,13 +97,13 @@ endif(WITH_LOC)
 
 
 add_library(TempControl_tcp_tct STATIC
-        runtime/type.h
+        runtime/misc.c
+        runtime/stackframe.h
         runtime/misc.h
         runtime/type.c
-        runtime/stackframe.h
+        runtime/type.h
         runtime/lib.h
         runtime/stackframe.c
-        runtime/misc.c
         runtime/ztype.h
         runtime/type-composite.h
         runtime/types.h
@@ -646,9 +646,9 @@ add_library(TempControl_tcp_tct STATIC
         library/tc/TempControlPeriodic/type-tc_TempControlPeriodic_Temperature_Payload.h
         library/tc/TempControlPeriodic/tc_TempControlPeriodic_Temperature_Payload.h
         library/tc/TempControlPeriodic/tc_TempControlPeriodic_Temperature_Payload.c
-        library/tc/TempControl_tcp_tct/type-tc_TempControl_tcp_tct_tct.h
-        library/tc/TempControl_tcp_tct/tc_TempControl_tcp_tct_tct.h
-        library/tc/TempControl_tcp_tct/tc_TempControl_tcp_tct_tct.c
+        library/tc/TempControl_tcp_tct/type-tc_TempControl_tcp_tct_tct_seL4App.h
+        library/tc/TempControl_tcp_tct/tc_TempControl_tcp_tct_tct_seL4App.h
+        library/tc/TempControl_tcp_tct/tc_TempControl_tcp_tct_tct_seL4App.c
         library/tc/type-tc_TranspilerToucher.h
         library/tc/tc_TranspilerToucher.h
         library/tc/tc_TranspilerToucher.c
@@ -658,7 +658,7 @@ add_library(TempControl_tcp_tct STATIC
         ext/TempControl_tcp_tct_adapter.c)
 
 target_include_directories(TempControl_tcp_tct
-        PUBLIC PUBLIC app-tct
+        PUBLIC PUBLIC app-tct_seL4App
         PUBLIC PUBLIC runtime
         PUBLIC PUBLIC library/art
         PUBLIC PUBLIC library/art/Art

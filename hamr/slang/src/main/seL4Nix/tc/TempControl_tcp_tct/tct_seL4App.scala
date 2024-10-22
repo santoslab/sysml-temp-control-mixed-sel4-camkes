@@ -13,7 +13,7 @@ import art.PortMode._
 import tc._
 import tc.TempControlMixedSeL4CAmKES.TempControl_tcp_tct_seL4Nix
 
-object tct extends App {
+object tct_seL4App extends App {
 
   val tctBridge : tc.TempControlMixedSeL4CAmKES.TempControl_tcp_tct_Bridge = {
     val currentTemp = Port[TempControlMixedSeL4CAmKES.Temperature] (id = portId"0", name = "TempControlSystem_Instance_tcp_tct_currentTemp", mode = DataIn)

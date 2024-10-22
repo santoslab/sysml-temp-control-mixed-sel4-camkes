@@ -18,24 +18,24 @@
      Timing_Properties::Clock_Period : 1 ms
      Timing_Properties::Frame_Period : 1000 ms
 
-     tsp_ts : Thread
-     ---------------
+     tsp_tst : Thread
+     ----------------
 
        CASE_Scheduling::Domain : 3
        Thread_Properties::Dispatch_Protocol : Periodic
        Timing_Properties::Compute_Execution_Time : 0 ms
        Timing_Properties::Period : 1000 ms
 
-     tcp_tc : Thread
-     ---------------
+     tcp_tct : Thread
+     ----------------
 
        CASE_Scheduling::Domain : 2
        Thread_Properties::Dispatch_Protocol : Sporadic
        Timing_Properties::Compute_Execution_Time : 0 ms
        Timing_Properties::Period : 1000 ms
 
-     fp_f : Thread
-     -------------
+     fp_ft : Thread
+     --------------
 
        CASE_Scheduling::Domain : 4
        Thread_Properties::Dispatch_Protocol : Sporadic
@@ -46,12 +46,12 @@
 
 const dschedule_t ksDomSchedule[] = {
   { .domain = 0, .length = 200 },  // all other seL4 threads, init, 200ms
-  { .domain = 3, .length = 100 },  // tsp_ts 0 ms
+  { .domain = 3, .length = 100 },  // tsp_tst 0 ms
   { .domain = 0, .length = 10 },  // switch to domain 0 to allow seL4 to deliver messages
-  { .domain = 2, .length = 100 },  // tcp_tc 0 ms
+  { .domain = 2, .length = 100 },  // tcp_tct 0 ms
   { .domain = 0, .length = 10 },  // switch to domain 0 to allow seL4 to deliver messages
-  { .domain = 4, .length = 100 },  // fp_f 0 ms
-  { .domain = 0, .length = 780 },  // pad rest of frame period
+  { .domain = 4, .length = 100 },  // fp_ft 0 ms
+  { .domain = 0, .length = 480 },  // pad rest of frame period
 };
 
 const word_t ksDomScheduleLength = sizeof(ksDomSchedule) / sizeof(dschedule_t);

@@ -13,7 +13,7 @@ import art.PortMode._
 import tc._
 import tc.TempControlMixedSeL4CAmKES.Fan_fp_ft_seL4Nix
 
-object ft extends App {
+object ft_seL4App extends App {
 
   val ftBridge : tc.TempControlMixedSeL4CAmKES.Fan_fp_ft_Bridge = {
     val fanCmd = Port[TempControlMixedSeL4CAmKES.FanCmd.Type] (id = portId"0", name = "TempControlSystem_Instance_fp_ft_fanCmd", mode = EventIn)
