@@ -16,41 +16,57 @@ exit /B %errorlevel%
 ::!#*/
 // #Sireum
 
+import org.sireum.String.escape
 import org.sireum._
 
 val home = Os.slashDir.up
 
 val sireum = Os.path(Os.env("SIREUM_HOME").get) / "bin" / (if (Os.isWin) "sireum.bat" else "sireum")
 
-val sysml_models_dir: Os.Path = Os.env("sysmlv2-models") match {
-    case Some(d) =>
-      val cand = Os.path(d)
-      if (!cand.exists || !cand.isDir) {
-        println(s"$cand is not a valid directory")
-        Os.exit(1)
-        halt("")
-      } else {
-        cand
-      }
-    case _ =>
-      val cand = home.up.up.up.up / "sysmlv2-models"
-      if (cand.exists && cand.isDir) {
-        cand
-      } else {
-        println("Please set the sysmlv2-models environment variable")
-        Os.exit(1)
-        halt("")
-      }
+var platform: String = "JVM"
+val expectedPlatforms: Set[String] = Set(ISZ("JVM", "Linux", "seL4"))
+var sysml_aadl_libraries: Option[Os.Path] =
+  if ((home.up.up.up.up / "sysmlv2-models").exists) Some(home.up.up.up.up / "sysmlv2-models" / "sysml-aadl-libraries")
+  else None()
+
+def exit(msg: String): Unit = {
+  cprintln(T, msg)
+  Os.exit(-1)
+  halt("")
 }
 
-val platform: String =
-  if(Os.cliArgs.nonEmpty) Os.cliArgs(0)
-  else "JVM"
+def set(a: String): Unit = {
+  if (expectedPlatforms.contains(a)) {
+    platform = a
+  } else {
+    val cand = Os.path(a)
+    if (cand.exists && (cand / "aadl.library").exists) {
+      sysml_aadl_libraries = Some(cand)
+    } else {
+      exit(s"Expecting either the platform or the location of the sysml-aadl-libraries but can't resolve '$a''")
+    }
+  }
+}
+
+Os.cliArgs match {
+  case ISZ(a) => set(a)
+  case ISZ(a, b) =>
+    set (a)
+    set (b)
+  case s =>
+    if (s.size > 2) {
+      exit("Only expecting the platform and/or the location of sysml-aadl-libraries")
+    }
+}
+
+if (sysml_aadl_libraries.isEmpty) {
+  exit("Please specify the location of the directory that contains aadl.library and aadl.propertysets")
+}
 
 var codegeArgs: ISZ[String] = ISZ(
     sireum.value, "hamr", "sysml", "codegen",
     "--platform", platform,
-    "--sourcepath", sysml_models_dir.value,
+    "--sourcepath", s"${sysml_aadl_libraries.get.value}:${home.value}",
     (home / "TempControlMixedCamkes.sysml").value)
 
 val results = Os.proc(codegeArgs).console.run()
