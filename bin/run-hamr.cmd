@@ -25,9 +25,7 @@ val sireum = Os.path(Os.env("SIREUM_HOME").get) / "bin" / (if (Os.isWin) "sireum
 
 var platform: String = "JVM"
 val expectedPlatforms: Set[String] = Set(ISZ("JVM", "Linux", "seL4"))
-var sysml_aadl_libraries: Option[Os.Path] =
-  if ((home.up.up.up.up / "sysmlv2-models").exists) Some(home.up.up.up.up / "sysmlv2-models" / "sysml-aadl-libraries")
-  else None()
+var sysml_aadl_libraries: ISZ[Os.Path] = ISZ()
 
 def exit(msg: String): Unit = {
   cprintln(T, msg)
@@ -40,33 +38,30 @@ def set(a: String): Unit = {
     platform = a
   } else {
     val cand = Os.path(a)
-    if (cand.exists && (cand / "aadl.library").exists) {
-      sysml_aadl_libraries = Some(cand)
+    if (cand.exists && cand.isDir) {
+      sysml_aadl_libraries = sysml_aadl_libraries :+ cand
     } else {
-      exit(s"Expecting either the platform or the location of the sysml-aadl-libraries but can't resolve '$a''")
+      exit(s"Expecting either the platform or the location of the sysml-aadl-libraries but can't resolve '$a'")
     }
   }
 }
 
-Os.cliArgs match {
-  case ISZ(a) => set(a)
-  case ISZ(a, b) =>
-    set (a)
-    set (b)
-  case s =>
-    if (s.size > 2) {
-      exit("Only expecting the platform and/or the location of sysml-aadl-libraries")
-    }
+for (arg <- Os.cliArgs) {
+  set(arg)
 }
 
 if (sysml_aadl_libraries.isEmpty) {
-  exit("Please specify the location of the directory that contains aadl.library and aadl.propertysets")
+  if ((home.up.up.up.up / "sysmlv2-models").exists) {
+    sysml_aadl_libraries = ISZ(home.up.up.up.up / "sysmlv2-models" / "sysml-aadl-libraries")
+  } else {
+    exit("Please specify the location of the directory that contains aadl.library and aadl.propertysets")
+  }
 }
 
 var codegeArgs: ISZ[String] = ISZ(
     sireum.value, "hamr", "sysml", "codegen",
     "--platform", platform,
-    "--sourcepath", s"${sysml_aadl_libraries.get.value}:${home.value}",
+    "--sourcepath", st"${(sysml_aadl_libraries, s"${Os.pathSepChar}")}${Os.pathSepChar}${home.value}".render,
     (home / "TempControlMixedCamkes.sysml").value)
 
 val results = Os.proc(codegeArgs).console.run()
