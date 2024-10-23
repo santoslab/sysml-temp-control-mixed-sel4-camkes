@@ -413,312 +413,103 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_touch(STACK_FRAME_ONLY) {
 
     sfUpdateLoc(173);
     {
-      DeclNewtc_Isolette_Environment_Heat(t_49);
-      tc_Isolette_Environment_Heat_example(SF (tc_Isolette_Environment_Heat) &t_49);
-      DeclNewtc_Isolette_Environment_Heat_Payload(t_48);
-      tc_Isolette_Environment_Heat_Payload_apply(SF &t_48, (tc_Isolette_Environment_Heat) ((tc_Isolette_Environment_Heat) &t_49));
+      DeclNewart_Empty(t_48);
+      art_Empty_apply(SF &t_48);
       tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_48));
-    }
-
-    sfUpdateLoc(174);
-    {
-      DeclNewtc_Isolette_Environment_Interface_Interaction(t_51);
-      tc_Isolette_Environment_Interface_Interaction_example(SF (tc_Isolette_Environment_Interface_Interaction) &t_51);
-      DeclNewtc_Isolette_Environment_Interface_Interaction_Payload(t_50);
-      tc_Isolette_Environment_Interface_Interaction_Payload_apply(SF &t_50, (tc_Isolette_Environment_Interface_Interaction) ((tc_Isolette_Environment_Interface_Interaction) &t_51));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_50));
     }
 
     sfUpdateLoc(175);
     {
-      DeclNewtc_Isolette_Environment_Air_Interaction(t_53);
-      tc_Isolette_Environment_Air_Interaction_example(SF (tc_Isolette_Environment_Air_Interaction) &t_53);
-      DeclNewtc_Isolette_Environment_Air_Interaction_Payload(t_52);
-      tc_Isolette_Environment_Air_Interaction_Payload_apply(SF &t_52, (tc_Isolette_Environment_Air_Interaction) ((tc_Isolette_Environment_Air_Interaction) &t_53));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_52));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_49);
+      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_49, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_49), (String) string(""));
     }
 
     sfUpdateLoc(176);
     {
-      DeclNewtc_TempControlMixed_Temperature(t_55);
-      tc_TempControlMixed_Temperature_example(SF (tc_TempControlMixed_Temperature) &t_55);
-      DeclNewtc_TempControlMixed_Temperature_Payload(t_54);
-      tc_TempControlMixed_Temperature_Payload_apply(SF &t_54, (tc_TempControlMixed_Temperature) ((tc_TempControlMixed_Temperature) &t_55));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_54));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_50);
+      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_50, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_50), (String) string(""));
     }
 
     sfUpdateLoc(177);
     {
-      DeclNewtc_TempControlMixed_SetPoint(t_57);
-      tc_TempControlMixed_SetPoint_example(SF (tc_TempControlMixed_SetPoint) &t_57);
-      DeclNewtc_TempControlMixed_SetPoint_Payload(t_56);
-      tc_TempControlMixed_SetPoint_Payload_apply(SF &t_56, (tc_TempControlMixed_SetPoint) ((tc_TempControlMixed_SetPoint) &t_57));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_56));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_51);
+      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_51, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_51), (String) string(""));
     }
 
     sfUpdateLoc(178);
     {
-      DeclNewOption_5F90D6(t_59);
-      tc_TempControlMixed_TempUnit_Type_byOrdinal(SF (Option_5F90D6) &t_59, Z_C(0));
-      tc_TempControlMixed_TempUnit_Type t_60 = Option_5F90D6_get_(SF ((Option_5F90D6) &t_59));
-      DeclNewtc_TempControlMixed_TempUnit_Payload(t_58);
-      tc_TempControlMixed_TempUnit_Payload_apply(SF &t_58, t_60);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_58));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_52);
+      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_52, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_52), (String) string(""));
     }
 
     sfUpdateLoc(179);
     {
-      DeclNewOption_8499F5(t_62);
-      tc_TempControlMixed_FanCmd_Type_byOrdinal(SF (Option_8499F5) &t_62, Z_C(0));
-      tc_TempControlMixed_FanCmd_Type t_63 = Option_8499F5_get_(SF ((Option_8499F5) &t_62));
-      DeclNewtc_TempControlMixed_FanCmd_Payload(t_61);
-      tc_TempControlMixed_FanCmd_Payload_apply(SF &t_61, t_63);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_61));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_53);
+      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_53, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_53), (String) string(""));
     }
 
     sfUpdateLoc(180);
     {
-      DeclNewOption_AAF24B(t_65);
-      tc_TempControlMixed_FanAck_Type_byOrdinal(SF (Option_AAF24B) &t_65, Z_C(0));
-      tc_TempControlMixed_FanAck_Type t_66 = Option_AAF24B_get_(SF ((Option_AAF24B) &t_65));
-      DeclNewtc_TempControlMixed_FanAck_Payload(t_64);
-      tc_TempControlMixed_FanAck_Payload_apply(SF &t_64, t_66);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_64));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_54);
+      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_54, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_54), (String) string(""));
     }
 
     sfUpdateLoc(181);
-    {
-      DeclNewtc_TempControlPeriodic_Temperature(t_68);
-      tc_TempControlPeriodic_Temperature_example(SF (tc_TempControlPeriodic_Temperature) &t_68);
-      DeclNewtc_TempControlPeriodic_Temperature_Payload(t_67);
-      tc_TempControlPeriodic_Temperature_Payload_apply(SF &t_67, (tc_TempControlPeriodic_Temperature) ((tc_TempControlPeriodic_Temperature) &t_68));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_67));
-    }
+    Option_DEC797 apiUsage_currentTemp;
+    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_55);
+    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_55, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+    DeclNewOption_DEC797(t_56);
+    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_currentTemp_(SF (Option_DEC797) &t_56, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_55));
+    apiUsage_currentTemp = (Option_DEC797) ((Option_DEC797) &t_56);
 
     sfUpdateLoc(182);
-    {
-      DeclNewtc_TempControlPeriodic_SetPoint(t_70);
-      tc_TempControlPeriodic_SetPoint_example(SF (tc_TempControlPeriodic_SetPoint) &t_70);
-      DeclNewtc_TempControlPeriodic_SetPoint_Payload(t_69);
-      tc_TempControlPeriodic_SetPoint_Payload_apply(SF &t_69, (tc_TempControlPeriodic_SetPoint) ((tc_TempControlPeriodic_SetPoint) &t_70));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_69));
-    }
+    Option_C622DB apiUsage_tempChanged;
+    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_57);
+    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_57, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+    DeclNewOption_C622DB(t_58);
+    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_tempChanged_(SF (Option_C622DB) &t_58, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_57));
+    apiUsage_tempChanged = (Option_C622DB) ((Option_C622DB) &t_58);
 
     sfUpdateLoc(183);
-    {
-      DeclNewOption_978FB8(t_72);
-      tc_TempControlPeriodic_TempUnit_Type_byOrdinal(SF (Option_978FB8) &t_72, Z_C(0));
-      tc_TempControlPeriodic_TempUnit_Type t_73 = Option_978FB8_get_(SF ((Option_978FB8) &t_72));
-      DeclNewtc_TempControlPeriodic_TempUnit_Payload(t_71);
-      tc_TempControlPeriodic_TempUnit_Payload_apply(SF &t_71, t_73);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_71));
-    }
+    Option_36021E apiUsage_fanAck;
+    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_59);
+    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_59, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+    DeclNewOption_36021E(t_60);
+    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_fanAck_(SF (Option_36021E) &t_60, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_59));
+    apiUsage_fanAck = (Option_36021E) ((Option_36021E) &t_60);
 
     sfUpdateLoc(184);
-    {
-      DeclNewOption_62C8EC(t_75);
-      tc_TempControlPeriodic_FanCmd_Type_byOrdinal(SF (Option_62C8EC) &t_75, Z_C(0));
-      tc_TempControlPeriodic_FanCmd_Type t_76 = Option_62C8EC_get_(SF ((Option_62C8EC) &t_75));
-      DeclNewtc_TempControlPeriodic_FanCmd_Payload(t_74);
-      tc_TempControlPeriodic_FanCmd_Payload_apply(SF &t_74, t_76);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_74));
-    }
+    Option_3BF471 apiUsage_setPoint;
+    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_61);
+    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_61, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+    DeclNewOption_3BF471(t_62);
+    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_setPoint_(SF (Option_3BF471) &t_62, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_61));
+    apiUsage_setPoint = (Option_3BF471) ((Option_3BF471) &t_62);
 
     sfUpdateLoc(185);
     {
-      DeclNewOption_121E48(t_78);
-      tc_TempControlPeriodic_FanAck_Type_byOrdinal(SF (Option_121E48) &t_78, Z_C(0));
-      tc_TempControlPeriodic_FanAck_Type t_79 = Option_121E48_get_(SF ((Option_121E48) &t_78));
-      DeclNewtc_TempControlPeriodic_FanAck_Payload(t_77);
-      tc_TempControlPeriodic_FanAck_Payload_apply(SF &t_77, t_79);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_77));
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_63);
+      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_63, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
+      DeclNewOption_5071ED(t_64);
+      tc_TempControlMixedSeL4CAmKES_FanCmd_Type_byOrdinal(SF (Option_5071ED) &t_64, Z_C(0));
+      tc_TempControlMixedSeL4CAmKES_FanCmd_Type t_65 = Option_5071ED_get_(SF ((Option_5071ED) &t_64));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_put_fanCmd_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_63), t_65);
     }
 
     sfUpdateLoc(186);
     {
-      DeclNewtc_Isolette_Data_Model_PhysicalTemp(t_81);
-      tc_Isolette_Data_Model_PhysicalTemp_example(SF (tc_Isolette_Data_Model_PhysicalTemp) &t_81);
-      DeclNewtc_Isolette_Data_Model_PhysicalTemp_Payload(t_80);
-      tc_Isolette_Data_Model_PhysicalTemp_Payload_apply(SF &t_80, (tc_Isolette_Data_Model_PhysicalTemp) ((tc_Isolette_Data_Model_PhysicalTemp) &t_81));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_80));
-    }
-
-    sfUpdateLoc(187);
-    {
-      DeclNewtc_Isolette_Data_Model_TempWstatus(t_83);
-      tc_Isolette_Data_Model_TempWstatus_example(SF (tc_Isolette_Data_Model_TempWstatus) &t_83);
-      DeclNewtc_Isolette_Data_Model_TempWstatus_Payload(t_82);
-      tc_Isolette_Data_Model_TempWstatus_Payload_apply(SF &t_82, (tc_Isolette_Data_Model_TempWstatus) ((tc_Isolette_Data_Model_TempWstatus) &t_83));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_82));
-    }
-
-    sfUpdateLoc(188);
-    {
-      DeclNewtc_Isolette_Data_Model_Temp(t_85);
-      tc_Isolette_Data_Model_Temp_example(SF (tc_Isolette_Data_Model_Temp) &t_85);
-      DeclNewtc_Isolette_Data_Model_Temp_Payload(t_84);
-      tc_Isolette_Data_Model_Temp_Payload_apply(SF &t_84, (tc_Isolette_Data_Model_Temp) ((tc_Isolette_Data_Model_Temp) &t_85));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_84));
-    }
-
-    sfUpdateLoc(189);
-    {
-      DeclNewOption_C6954F(t_87);
-      tc_Isolette_Data_Model_On_Off_Type_byOrdinal(SF (Option_C6954F) &t_87, Z_C(0));
-      tc_Isolette_Data_Model_On_Off_Type t_88 = Option_C6954F_get_(SF ((Option_C6954F) &t_87));
-      DeclNewtc_Isolette_Data_Model_On_Off_Payload(t_86);
-      tc_Isolette_Data_Model_On_Off_Payload_apply(SF &t_86, t_88);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_86));
-    }
-
-    sfUpdateLoc(190);
-    {
-      DeclNewtc_Isolette_Data_Model_Failure_Flag(t_90);
-      tc_Isolette_Data_Model_Failure_Flag_example(SF (tc_Isolette_Data_Model_Failure_Flag) &t_90);
-      DeclNewtc_Isolette_Data_Model_Failure_Flag_Payload(t_89);
-      tc_Isolette_Data_Model_Failure_Flag_Payload_apply(SF &t_89, (tc_Isolette_Data_Model_Failure_Flag) ((tc_Isolette_Data_Model_Failure_Flag) &t_90));
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_89));
-    }
-
-    sfUpdateLoc(191);
-    {
-      DeclNewOption_570179(t_92);
-      tc_Isolette_Data_Model_ValueStatus_Type_byOrdinal(SF (Option_570179) &t_92, Z_C(0));
-      tc_Isolette_Data_Model_ValueStatus_Type t_93 = Option_570179_get_(SF ((Option_570179) &t_92));
-      DeclNewtc_Isolette_Data_Model_ValueStatus_Payload(t_91);
-      tc_Isolette_Data_Model_ValueStatus_Payload_apply(SF &t_91, t_93);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_91));
-    }
-
-    sfUpdateLoc(192);
-    {
-      DeclNewOption_C9A4D6(t_95);
-      tc_Isolette_Data_Model_Status_Type_byOrdinal(SF (Option_C9A4D6) &t_95, Z_C(0));
-      tc_Isolette_Data_Model_Status_Type t_96 = Option_C9A4D6_get_(SF ((Option_C9A4D6) &t_95));
-      DeclNewtc_Isolette_Data_Model_Status_Payload(t_94);
-      tc_Isolette_Data_Model_Status_Payload_apply(SF &t_94, t_96);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_94));
-    }
-
-    sfUpdateLoc(193);
-    {
-      DeclNewOption_A2275D(t_98);
-      tc_Isolette_Data_Model_Regulator_Mode_Type_byOrdinal(SF (Option_A2275D) &t_98, Z_C(0));
-      tc_Isolette_Data_Model_Regulator_Mode_Type t_99 = Option_A2275D_get_(SF ((Option_A2275D) &t_98));
-      DeclNewtc_Isolette_Data_Model_Regulator_Mode_Payload(t_97);
-      tc_Isolette_Data_Model_Regulator_Mode_Payload_apply(SF &t_97, t_99);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_97));
-    }
-
-    sfUpdateLoc(194);
-    {
-      DeclNewOption_38D338(t_101);
-      tc_Isolette_Data_Model_Monitor_Mode_Type_byOrdinal(SF (Option_38D338) &t_101, Z_C(0));
-      tc_Isolette_Data_Model_Monitor_Mode_Type t_102 = Option_38D338_get_(SF ((Option_38D338) &t_101));
-      DeclNewtc_Isolette_Data_Model_Monitor_Mode_Payload(t_100);
-      tc_Isolette_Data_Model_Monitor_Mode_Payload_apply(SF &t_100, t_102);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_100));
-    }
-
-    sfUpdateLoc(195);
-    {
-      DeclNewart_Empty(t_103);
-      art_Empty_apply(SF &t_103);
-      tc_TempControl_tcp_tct_tct_seL4App_touch_printDataContent(SF (art_DataContent) (&t_103));
-    }
-
-    sfUpdateLoc(197);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_104);
-      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_104, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_104), (String) string(""));
-    }
-
-    sfUpdateLoc(198);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_105);
-      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_105, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_105), (String) string(""));
-    }
-
-    sfUpdateLoc(199);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_106);
-      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_106, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_106), (String) string(""));
-    }
-
-    sfUpdateLoc(200);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_107);
-      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_107, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_107), (String) string(""));
-    }
-
-    sfUpdateLoc(201);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_108);
-      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_108, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_108), (String) string(""));
-    }
-
-    sfUpdateLoc(202);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_109);
-      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_109, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_109), (String) string(""));
-    }
-
-    sfUpdateLoc(203);
-    Option_DEC797 apiUsage_currentTemp;
-    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_110);
-    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_110, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-    DeclNewOption_DEC797(t_111);
-    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_currentTemp_(SF (Option_DEC797) &t_111, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_110));
-    apiUsage_currentTemp = (Option_DEC797) ((Option_DEC797) &t_111);
-
-    sfUpdateLoc(204);
-    Option_C622DB apiUsage_tempChanged;
-    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_112);
-    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_112, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-    DeclNewOption_C622DB(t_113);
-    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_tempChanged_(SF (Option_C622DB) &t_113, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_112));
-    apiUsage_tempChanged = (Option_C622DB) ((Option_C622DB) &t_113);
-
-    sfUpdateLoc(205);
-    Option_36021E apiUsage_fanAck;
-    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_114);
-    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_114, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-    DeclNewOption_36021E(t_115);
-    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_fanAck_(SF (Option_36021E) &t_115, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_114));
-    apiUsage_fanAck = (Option_36021E) ((Option_36021E) &t_115);
-
-    sfUpdateLoc(206);
-    Option_3BF471 apiUsage_setPoint;
-    DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_116);
-    Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_116, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-    DeclNewOption_3BF471(t_117);
-    tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_get_setPoint_(SF (Option_3BF471) &t_117, ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_116));
-    apiUsage_setPoint = (Option_3BF471) ((Option_3BF471) &t_117);
-
-    sfUpdateLoc(207);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api(t_118);
-      Option_098837_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_118, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_initialization_api(SF_LAST));
-      DeclNewOption_5071ED(t_119);
-      tc_TempControlMixedSeL4CAmKES_FanCmd_Type_byOrdinal(SF (Option_5071ED) &t_119, Z_C(0));
-      tc_TempControlMixedSeL4CAmKES_FanCmd_Type t_120 = Option_5071ED_get_(SF ((Option_5071ED) &t_119));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api_put_fanCmd_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Initialization_Api) &t_118), t_120);
-    }
-
-    sfUpdateLoc(208);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_121);
-      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_121, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
-      DeclNewOption_5071ED(t_122);
-      tc_TempControlMixedSeL4CAmKES_FanCmd_Type_byOrdinal(SF (Option_5071ED) &t_122, Z_C(0));
-      tc_TempControlMixedSeL4CAmKES_FanCmd_Type t_123 = Option_5071ED_get_(SF ((Option_5071ED) &t_122));
-      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_put_fanCmd_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_121), t_123);
+      DeclNewtc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api(t_66);
+      Option_889345_get_(SF (tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_66, tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_c_operational_api(SF_LAST));
+      DeclNewOption_5071ED(t_67);
+      tc_TempControlMixedSeL4CAmKES_FanCmd_Type_byOrdinal(SF (Option_5071ED) &t_67, Z_C(0));
+      tc_TempControlMixedSeL4CAmKES_FanCmd_Type t_68 = Option_5071ED_get_(SF ((Option_5071ED) &t_67));
+      tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api_put_fanCmd_(SF ((tc_TempControlMixedSeL4CAmKES_TempControl_Operational_Api) &t_66), t_68);
     }
   }
 }
@@ -728,7 +519,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logInfo(STACK_FRAME String title, String
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(213);
+  sfUpdateLoc(191);
   {
     String_cprint(tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_name_(tc_TempControl_tcp_tct_tct_seL4App_tctBridge(SF_LAST)), T);
   }
@@ -737,7 +528,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logInfo(STACK_FRAME String title, String
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(214);
+  sfUpdateLoc(192);
   {
     String_cprint(string(": "), T);
   }
@@ -746,7 +537,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logInfo(STACK_FRAME String title, String
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(215);
+  sfUpdateLoc(193);
   {
     String_cprint(msg, T);
     cprintln(T);
@@ -761,7 +552,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logDebug(STACK_FRAME String title, Strin
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(225);
+  sfUpdateLoc(203);
   {
     String_cprint(tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_name_(tc_TempControl_tcp_tct_tct_seL4App_tctBridge(SF_LAST)), T);
   }
@@ -770,7 +561,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logDebug(STACK_FRAME String title, Strin
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(226);
+  sfUpdateLoc(204);
   {
     String_cprint(string(": "), T);
   }
@@ -779,7 +570,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logDebug(STACK_FRAME String title, Strin
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(227);
+  sfUpdateLoc(205);
   {
     String_cprint(msg, T);
     cprintln(T);
@@ -794,7 +585,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logError(STACK_FRAME String title, Strin
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(219);
+  sfUpdateLoc(197);
   {
     String_cprint(tc_TempControlMixedSeL4CAmKES_TempControl_tcp_tct_Bridge_name_(tc_TempControl_tcp_tct_tct_seL4App_tctBridge(SF_LAST)), F);
   }
@@ -803,7 +594,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logError(STACK_FRAME String title, Strin
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(220);
+  sfUpdateLoc(198);
   {
     String_cprint(string(": "), F);
   }
@@ -812,7 +603,7 @@ Unit tc_TempControl_tcp_tct_tct_seL4App_logError(STACK_FRAME String title, Strin
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(221);
+  sfUpdateLoc(199);
   {
     String_cprint(msg, F);
     cprintln(F);

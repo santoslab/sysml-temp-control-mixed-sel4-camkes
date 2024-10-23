@@ -9,7 +9,12 @@ extern "C" {
 
 // art.DataContent
 
-#include <type-tc_TempControlPeriodic_FanCmd_Payload.h>
+#include <type-tc_TempControlMixedSeL4CAmKES_SetPoint_Payload.h>
+#include <type-tc_TempControlMixedSeL4CAmKES_FanCmd_Payload.h>
+#include <type-tc_TempControlMixedSeL4CAmKES_FanAck_Payload.h>
+#include <type-art_Empty.h>
+#include <type-tc_TempControlMixedSeL4CAmKES_TempUnit_Payload.h>
+#include <type-tc_TempControlMixedSeL4CAmKES_Temperature_Payload.h>
 #include <type-tc_Base_Types_Boolean_Payload.h>
 #include <type-tc_Base_Types_Integer_Payload.h>
 #include <type-tc_Base_Types_Integer_8_Payload.h>
@@ -25,38 +30,16 @@ extern "C" {
 #include <type-tc_Base_Types_Float_64_Payload.h>
 #include <type-tc_Base_Types_Character_Payload.h>
 #include <type-tc_Base_Types_String_Payload.h>
-#include <type-tc_TempControlPeriodic_Temperature_Payload.h>
-#include <type-tc_Isolette_Data_Model_Temp_Payload.h>
-#include <type-tc_Isolette_Data_Model_Status_Payload.h>
-#include <type-tc_Isolette_Data_Model_Failure_Flag_Payload.h>
-#include <type-tc_TempControlPeriodic_FanAck_Payload.h>
-#include <type-tc_TempControlPeriodic_SetPoint_Payload.h>
-#include <type-tc_Isolette_Data_Model_ValueStatus_Payload.h>
-#include <type-tc_Isolette_Data_Model_On_Off_Payload.h>
-#include <type-tc_TempControlMixed_TempUnit_Payload.h>
-#include <type-art_Empty.h>
-#include <type-tc_TempControlMixedSeL4CAmKES_TempUnit_Payload.h>
-#include <type-tc_Isolette_Environment_Heat_Payload.h>
-#include <type-tc_TempControlMixedSeL4CAmKES_FanCmd_Payload.h>
-#include <type-tc_Isolette_Data_Model_PhysicalTemp_Payload.h>
-#include <type-tc_Isolette_Data_Model_Monitor_Mode_Payload.h>
-#include <type-tc_Isolette_Environment_Air_Interaction_Payload.h>
-#include <type-tc_TempControlMixedSeL4CAmKES_SetPoint_Payload.h>
-#include <type-tc_TempControlMixedSeL4CAmKES_Temperature_Payload.h>
-#include <type-tc_TempControlMixed_Temperature_Payload.h>
-#include <type-tc_Isolette_Data_Model_Regulator_Mode_Payload.h>
-#include <type-tc_TempControlMixedSeL4CAmKES_FanAck_Payload.h>
-#include <type-tc_TempControlPeriodic_TempUnit_Payload.h>
-#include <type-tc_TempControlMixed_FanCmd_Payload.h>
-#include <type-tc_Isolette_Environment_Interface_Interaction_Payload.h>
-#include <type-tc_TempControlMixed_SetPoint_Payload.h>
-#include <type-tc_Isolette_Data_Model_TempWstatus_Payload.h>
-#include <type-tc_TempControlMixed_FanAck_Payload.h>
 
 typedef union art_DataContent *art_DataContent;
 union art_DataContent {
   TYPE type;
-  struct tc_TempControlPeriodic_FanCmd_Payload tc_TempControlPeriodic_FanCmd_Payload;
+  struct tc_TempControlMixedSeL4CAmKES_SetPoint_Payload tc_TempControlMixedSeL4CAmKES_SetPoint_Payload;
+  struct tc_TempControlMixedSeL4CAmKES_FanCmd_Payload tc_TempControlMixedSeL4CAmKES_FanCmd_Payload;
+  struct tc_TempControlMixedSeL4CAmKES_FanAck_Payload tc_TempControlMixedSeL4CAmKES_FanAck_Payload;
+  struct art_Empty art_Empty;
+  struct tc_TempControlMixedSeL4CAmKES_TempUnit_Payload tc_TempControlMixedSeL4CAmKES_TempUnit_Payload;
+  struct tc_TempControlMixedSeL4CAmKES_Temperature_Payload tc_TempControlMixedSeL4CAmKES_Temperature_Payload;
   struct tc_Base_Types_Boolean_Payload tc_Base_Types_Boolean_Payload;
   struct tc_Base_Types_Integer_Payload tc_Base_Types_Integer_Payload;
   struct tc_Base_Types_Integer_8_Payload tc_Base_Types_Integer_8_Payload;
@@ -72,33 +55,6 @@ union art_DataContent {
   struct tc_Base_Types_Float_64_Payload tc_Base_Types_Float_64_Payload;
   struct tc_Base_Types_Character_Payload tc_Base_Types_Character_Payload;
   struct tc_Base_Types_String_Payload tc_Base_Types_String_Payload;
-  struct tc_TempControlPeriodic_Temperature_Payload tc_TempControlPeriodic_Temperature_Payload;
-  struct tc_Isolette_Data_Model_Temp_Payload tc_Isolette_Data_Model_Temp_Payload;
-  struct tc_Isolette_Data_Model_Status_Payload tc_Isolette_Data_Model_Status_Payload;
-  struct tc_Isolette_Data_Model_Failure_Flag_Payload tc_Isolette_Data_Model_Failure_Flag_Payload;
-  struct tc_TempControlPeriodic_FanAck_Payload tc_TempControlPeriodic_FanAck_Payload;
-  struct tc_TempControlPeriodic_SetPoint_Payload tc_TempControlPeriodic_SetPoint_Payload;
-  struct tc_Isolette_Data_Model_ValueStatus_Payload tc_Isolette_Data_Model_ValueStatus_Payload;
-  struct tc_Isolette_Data_Model_On_Off_Payload tc_Isolette_Data_Model_On_Off_Payload;
-  struct tc_TempControlMixed_TempUnit_Payload tc_TempControlMixed_TempUnit_Payload;
-  struct art_Empty art_Empty;
-  struct tc_TempControlMixedSeL4CAmKES_TempUnit_Payload tc_TempControlMixedSeL4CAmKES_TempUnit_Payload;
-  struct tc_Isolette_Environment_Heat_Payload tc_Isolette_Environment_Heat_Payload;
-  struct tc_TempControlMixedSeL4CAmKES_FanCmd_Payload tc_TempControlMixedSeL4CAmKES_FanCmd_Payload;
-  struct tc_Isolette_Data_Model_PhysicalTemp_Payload tc_Isolette_Data_Model_PhysicalTemp_Payload;
-  struct tc_Isolette_Data_Model_Monitor_Mode_Payload tc_Isolette_Data_Model_Monitor_Mode_Payload;
-  struct tc_Isolette_Environment_Air_Interaction_Payload tc_Isolette_Environment_Air_Interaction_Payload;
-  struct tc_TempControlMixedSeL4CAmKES_SetPoint_Payload tc_TempControlMixedSeL4CAmKES_SetPoint_Payload;
-  struct tc_TempControlMixedSeL4CAmKES_Temperature_Payload tc_TempControlMixedSeL4CAmKES_Temperature_Payload;
-  struct tc_TempControlMixed_Temperature_Payload tc_TempControlMixed_Temperature_Payload;
-  struct tc_Isolette_Data_Model_Regulator_Mode_Payload tc_Isolette_Data_Model_Regulator_Mode_Payload;
-  struct tc_TempControlMixedSeL4CAmKES_FanAck_Payload tc_TempControlMixedSeL4CAmKES_FanAck_Payload;
-  struct tc_TempControlPeriodic_TempUnit_Payload tc_TempControlPeriodic_TempUnit_Payload;
-  struct tc_TempControlMixed_FanCmd_Payload tc_TempControlMixed_FanCmd_Payload;
-  struct tc_Isolette_Environment_Interface_Interaction_Payload tc_Isolette_Environment_Interface_Interaction_Payload;
-  struct tc_TempControlMixed_SetPoint_Payload tc_TempControlMixed_SetPoint_Payload;
-  struct tc_Isolette_Data_Model_TempWstatus_Payload tc_Isolette_Data_Model_TempWstatus_Payload;
-  struct tc_TempControlMixed_FanAck_Payload tc_TempControlMixed_FanAck_Payload;
 };
 
 #define DeclNewart_DataContent(x) union art_DataContent x = { 0 }

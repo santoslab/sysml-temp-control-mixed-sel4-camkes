@@ -356,288 +356,79 @@ Unit tc_Fan_fp_ft_ft_seL4App_touch(STACK_FRAME_ONLY) {
 
     sfUpdateLoc(137);
     {
-      DeclNewtc_Isolette_Environment_Heat(t_49);
-      tc_Isolette_Environment_Heat_example(SF (tc_Isolette_Environment_Heat) &t_49);
-      DeclNewtc_Isolette_Environment_Heat_Payload(t_48);
-      tc_Isolette_Environment_Heat_Payload_apply(SF &t_48, (tc_Isolette_Environment_Heat) ((tc_Isolette_Environment_Heat) &t_49));
+      DeclNewart_Empty(t_48);
+      art_Empty_apply(SF &t_48);
       tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_48));
-    }
-
-    sfUpdateLoc(138);
-    {
-      DeclNewtc_Isolette_Environment_Interface_Interaction(t_51);
-      tc_Isolette_Environment_Interface_Interaction_example(SF (tc_Isolette_Environment_Interface_Interaction) &t_51);
-      DeclNewtc_Isolette_Environment_Interface_Interaction_Payload(t_50);
-      tc_Isolette_Environment_Interface_Interaction_Payload_apply(SF &t_50, (tc_Isolette_Environment_Interface_Interaction) ((tc_Isolette_Environment_Interface_Interaction) &t_51));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_50));
     }
 
     sfUpdateLoc(139);
     {
-      DeclNewtc_Isolette_Environment_Air_Interaction(t_53);
-      tc_Isolette_Environment_Air_Interaction_example(SF (tc_Isolette_Environment_Air_Interaction) &t_53);
-      DeclNewtc_Isolette_Environment_Air_Interaction_Payload(t_52);
-      tc_Isolette_Environment_Air_Interaction_Payload_apply(SF &t_52, (tc_Isolette_Environment_Air_Interaction) ((tc_Isolette_Environment_Air_Interaction) &t_53));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_52));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_49);
+      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_49, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_49), (String) string(""));
     }
 
     sfUpdateLoc(140);
     {
-      DeclNewtc_TempControlMixed_Temperature(t_55);
-      tc_TempControlMixed_Temperature_example(SF (tc_TempControlMixed_Temperature) &t_55);
-      DeclNewtc_TempControlMixed_Temperature_Payload(t_54);
-      tc_TempControlMixed_Temperature_Payload_apply(SF &t_54, (tc_TempControlMixed_Temperature) ((tc_TempControlMixed_Temperature) &t_55));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_54));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_50);
+      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_50, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_50), (String) string(""));
     }
 
     sfUpdateLoc(141);
     {
-      DeclNewtc_TempControlMixed_SetPoint(t_57);
-      tc_TempControlMixed_SetPoint_example(SF (tc_TempControlMixed_SetPoint) &t_57);
-      DeclNewtc_TempControlMixed_SetPoint_Payload(t_56);
-      tc_TempControlMixed_SetPoint_Payload_apply(SF &t_56, (tc_TempControlMixed_SetPoint) ((tc_TempControlMixed_SetPoint) &t_57));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_56));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_51);
+      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_51, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_51), (String) string(""));
     }
 
     sfUpdateLoc(142);
     {
-      DeclNewOption_5F90D6(t_59);
-      tc_TempControlMixed_TempUnit_Type_byOrdinal(SF (Option_5F90D6) &t_59, Z_C(0));
-      tc_TempControlMixed_TempUnit_Type t_60 = Option_5F90D6_get_(SF ((Option_5F90D6) &t_59));
-      DeclNewtc_TempControlMixed_TempUnit_Payload(t_58);
-      tc_TempControlMixed_TempUnit_Payload_apply(SF &t_58, t_60);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_58));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_52);
+      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_52, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_52), (String) string(""));
     }
 
     sfUpdateLoc(143);
     {
-      DeclNewOption_8499F5(t_62);
-      tc_TempControlMixed_FanCmd_Type_byOrdinal(SF (Option_8499F5) &t_62, Z_C(0));
-      tc_TempControlMixed_FanCmd_Type t_63 = Option_8499F5_get_(SF ((Option_8499F5) &t_62));
-      DeclNewtc_TempControlMixed_FanCmd_Payload(t_61);
-      tc_TempControlMixed_FanCmd_Payload_apply(SF &t_61, t_63);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_61));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_53);
+      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_53, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_53), (String) string(""));
     }
 
     sfUpdateLoc(144);
     {
-      DeclNewOption_AAF24B(t_65);
-      tc_TempControlMixed_FanAck_Type_byOrdinal(SF (Option_AAF24B) &t_65, Z_C(0));
-      tc_TempControlMixed_FanAck_Type t_66 = Option_AAF24B_get_(SF ((Option_AAF24B) &t_65));
-      DeclNewtc_TempControlMixed_FanAck_Payload(t_64);
-      tc_TempControlMixed_FanAck_Payload_apply(SF &t_64, t_66);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_64));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_54);
+      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_54, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
+      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_54), (String) string(""));
     }
 
     sfUpdateLoc(145);
-    {
-      DeclNewtc_TempControlPeriodic_Temperature(t_68);
-      tc_TempControlPeriodic_Temperature_example(SF (tc_TempControlPeriodic_Temperature) &t_68);
-      DeclNewtc_TempControlPeriodic_Temperature_Payload(t_67);
-      tc_TempControlPeriodic_Temperature_Payload_apply(SF &t_67, (tc_TempControlPeriodic_Temperature) ((tc_TempControlPeriodic_Temperature) &t_68));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_67));
-    }
+    Option_5071ED apiUsage_fanCmd;
+    DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_55);
+    Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_55, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
+    DeclNewOption_5071ED(t_56);
+    tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_get_fanCmd_(SF (Option_5071ED) &t_56, ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_55));
+    apiUsage_fanCmd = (Option_5071ED) ((Option_5071ED) &t_56);
 
     sfUpdateLoc(146);
     {
-      DeclNewtc_TempControlPeriodic_SetPoint(t_70);
-      tc_TempControlPeriodic_SetPoint_example(SF (tc_TempControlPeriodic_SetPoint) &t_70);
-      DeclNewtc_TempControlPeriodic_SetPoint_Payload(t_69);
-      tc_TempControlPeriodic_SetPoint_Payload_apply(SF &t_69, (tc_TempControlPeriodic_SetPoint) ((tc_TempControlPeriodic_SetPoint) &t_70));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_69));
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_57);
+      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_57, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
+      DeclNewOption_36021E(t_58);
+      tc_TempControlMixedSeL4CAmKES_FanAck_Type_byOrdinal(SF (Option_36021E) &t_58, Z_C(0));
+      tc_TempControlMixedSeL4CAmKES_FanAck_Type t_59 = Option_36021E_get_(SF ((Option_36021E) &t_58));
+      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_put_fanAck_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_57), t_59);
     }
 
     sfUpdateLoc(147);
     {
-      DeclNewOption_978FB8(t_72);
-      tc_TempControlPeriodic_TempUnit_Type_byOrdinal(SF (Option_978FB8) &t_72, Z_C(0));
-      tc_TempControlPeriodic_TempUnit_Type t_73 = Option_978FB8_get_(SF ((Option_978FB8) &t_72));
-      DeclNewtc_TempControlPeriodic_TempUnit_Payload(t_71);
-      tc_TempControlPeriodic_TempUnit_Payload_apply(SF &t_71, t_73);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_71));
-    }
-
-    sfUpdateLoc(148);
-    {
-      DeclNewOption_62C8EC(t_75);
-      tc_TempControlPeriodic_FanCmd_Type_byOrdinal(SF (Option_62C8EC) &t_75, Z_C(0));
-      tc_TempControlPeriodic_FanCmd_Type t_76 = Option_62C8EC_get_(SF ((Option_62C8EC) &t_75));
-      DeclNewtc_TempControlPeriodic_FanCmd_Payload(t_74);
-      tc_TempControlPeriodic_FanCmd_Payload_apply(SF &t_74, t_76);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_74));
-    }
-
-    sfUpdateLoc(149);
-    {
-      DeclNewOption_121E48(t_78);
-      tc_TempControlPeriodic_FanAck_Type_byOrdinal(SF (Option_121E48) &t_78, Z_C(0));
-      tc_TempControlPeriodic_FanAck_Type t_79 = Option_121E48_get_(SF ((Option_121E48) &t_78));
-      DeclNewtc_TempControlPeriodic_FanAck_Payload(t_77);
-      tc_TempControlPeriodic_FanAck_Payload_apply(SF &t_77, t_79);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_77));
-    }
-
-    sfUpdateLoc(150);
-    {
-      DeclNewtc_Isolette_Data_Model_PhysicalTemp(t_81);
-      tc_Isolette_Data_Model_PhysicalTemp_example(SF (tc_Isolette_Data_Model_PhysicalTemp) &t_81);
-      DeclNewtc_Isolette_Data_Model_PhysicalTemp_Payload(t_80);
-      tc_Isolette_Data_Model_PhysicalTemp_Payload_apply(SF &t_80, (tc_Isolette_Data_Model_PhysicalTemp) ((tc_Isolette_Data_Model_PhysicalTemp) &t_81));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_80));
-    }
-
-    sfUpdateLoc(151);
-    {
-      DeclNewtc_Isolette_Data_Model_TempWstatus(t_83);
-      tc_Isolette_Data_Model_TempWstatus_example(SF (tc_Isolette_Data_Model_TempWstatus) &t_83);
-      DeclNewtc_Isolette_Data_Model_TempWstatus_Payload(t_82);
-      tc_Isolette_Data_Model_TempWstatus_Payload_apply(SF &t_82, (tc_Isolette_Data_Model_TempWstatus) ((tc_Isolette_Data_Model_TempWstatus) &t_83));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_82));
-    }
-
-    sfUpdateLoc(152);
-    {
-      DeclNewtc_Isolette_Data_Model_Temp(t_85);
-      tc_Isolette_Data_Model_Temp_example(SF (tc_Isolette_Data_Model_Temp) &t_85);
-      DeclNewtc_Isolette_Data_Model_Temp_Payload(t_84);
-      tc_Isolette_Data_Model_Temp_Payload_apply(SF &t_84, (tc_Isolette_Data_Model_Temp) ((tc_Isolette_Data_Model_Temp) &t_85));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_84));
-    }
-
-    sfUpdateLoc(153);
-    {
-      DeclNewOption_C6954F(t_87);
-      tc_Isolette_Data_Model_On_Off_Type_byOrdinal(SF (Option_C6954F) &t_87, Z_C(0));
-      tc_Isolette_Data_Model_On_Off_Type t_88 = Option_C6954F_get_(SF ((Option_C6954F) &t_87));
-      DeclNewtc_Isolette_Data_Model_On_Off_Payload(t_86);
-      tc_Isolette_Data_Model_On_Off_Payload_apply(SF &t_86, t_88);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_86));
-    }
-
-    sfUpdateLoc(154);
-    {
-      DeclNewtc_Isolette_Data_Model_Failure_Flag(t_90);
-      tc_Isolette_Data_Model_Failure_Flag_example(SF (tc_Isolette_Data_Model_Failure_Flag) &t_90);
-      DeclNewtc_Isolette_Data_Model_Failure_Flag_Payload(t_89);
-      tc_Isolette_Data_Model_Failure_Flag_Payload_apply(SF &t_89, (tc_Isolette_Data_Model_Failure_Flag) ((tc_Isolette_Data_Model_Failure_Flag) &t_90));
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_89));
-    }
-
-    sfUpdateLoc(155);
-    {
-      DeclNewOption_570179(t_92);
-      tc_Isolette_Data_Model_ValueStatus_Type_byOrdinal(SF (Option_570179) &t_92, Z_C(0));
-      tc_Isolette_Data_Model_ValueStatus_Type t_93 = Option_570179_get_(SF ((Option_570179) &t_92));
-      DeclNewtc_Isolette_Data_Model_ValueStatus_Payload(t_91);
-      tc_Isolette_Data_Model_ValueStatus_Payload_apply(SF &t_91, t_93);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_91));
-    }
-
-    sfUpdateLoc(156);
-    {
-      DeclNewOption_C9A4D6(t_95);
-      tc_Isolette_Data_Model_Status_Type_byOrdinal(SF (Option_C9A4D6) &t_95, Z_C(0));
-      tc_Isolette_Data_Model_Status_Type t_96 = Option_C9A4D6_get_(SF ((Option_C9A4D6) &t_95));
-      DeclNewtc_Isolette_Data_Model_Status_Payload(t_94);
-      tc_Isolette_Data_Model_Status_Payload_apply(SF &t_94, t_96);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_94));
-    }
-
-    sfUpdateLoc(157);
-    {
-      DeclNewOption_A2275D(t_98);
-      tc_Isolette_Data_Model_Regulator_Mode_Type_byOrdinal(SF (Option_A2275D) &t_98, Z_C(0));
-      tc_Isolette_Data_Model_Regulator_Mode_Type t_99 = Option_A2275D_get_(SF ((Option_A2275D) &t_98));
-      DeclNewtc_Isolette_Data_Model_Regulator_Mode_Payload(t_97);
-      tc_Isolette_Data_Model_Regulator_Mode_Payload_apply(SF &t_97, t_99);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_97));
-    }
-
-    sfUpdateLoc(158);
-    {
-      DeclNewOption_38D338(t_101);
-      tc_Isolette_Data_Model_Monitor_Mode_Type_byOrdinal(SF (Option_38D338) &t_101, Z_C(0));
-      tc_Isolette_Data_Model_Monitor_Mode_Type t_102 = Option_38D338_get_(SF ((Option_38D338) &t_101));
-      DeclNewtc_Isolette_Data_Model_Monitor_Mode_Payload(t_100);
-      tc_Isolette_Data_Model_Monitor_Mode_Payload_apply(SF &t_100, t_102);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_100));
-    }
-
-    sfUpdateLoc(159);
-    {
-      DeclNewart_Empty(t_103);
-      art_Empty_apply(SF &t_103);
-      tc_Fan_fp_ft_ft_seL4App_touch_printDataContent(SF (art_DataContent) (&t_103));
-    }
-
-    sfUpdateLoc(161);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_104);
-      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_104, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_104), (String) string(""));
-    }
-
-    sfUpdateLoc(162);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_105);
-      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_105, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_105), (String) string(""));
-    }
-
-    sfUpdateLoc(163);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_106);
-      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_106, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_106), (String) string(""));
-    }
-
-    sfUpdateLoc(164);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_107);
-      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_107, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_logInfo_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_107), (String) string(""));
-    }
-
-    sfUpdateLoc(165);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_108);
-      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_108, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_logDebug_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_108), (String) string(""));
-    }
-
-    sfUpdateLoc(166);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_109);
-      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_109, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
-      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_logError_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_109), (String) string(""));
-    }
-
-    sfUpdateLoc(167);
-    Option_5071ED apiUsage_fanCmd;
-    DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_110);
-    Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_110, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
-    DeclNewOption_5071ED(t_111);
-    tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_get_fanCmd_(SF (Option_5071ED) &t_111, ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_110));
-    apiUsage_fanCmd = (Option_5071ED) ((Option_5071ED) &t_111);
-
-    sfUpdateLoc(168);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api(t_112);
-      Option_9C9ECC_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_112, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_initialization_api(SF_LAST));
-      DeclNewOption_36021E(t_113);
-      tc_TempControlMixedSeL4CAmKES_FanAck_Type_byOrdinal(SF (Option_36021E) &t_113, Z_C(0));
-      tc_TempControlMixedSeL4CAmKES_FanAck_Type t_114 = Option_36021E_get_(SF ((Option_36021E) &t_113));
-      tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api_put_fanAck_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Initialization_Api) &t_112), t_114);
-    }
-
-    sfUpdateLoc(169);
-    {
-      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_115);
-      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_115, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
-      DeclNewOption_36021E(t_116);
-      tc_TempControlMixedSeL4CAmKES_FanAck_Type_byOrdinal(SF (Option_36021E) &t_116, Z_C(0));
-      tc_TempControlMixedSeL4CAmKES_FanAck_Type t_117 = Option_36021E_get_(SF ((Option_36021E) &t_116));
-      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_put_fanAck_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_115), t_117);
+      DeclNewtc_TempControlMixedSeL4CAmKES_Fan_Operational_Api(t_60);
+      Option_CA19CB_get_(SF (tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_60, tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_c_operational_api(SF_LAST));
+      DeclNewOption_36021E(t_61);
+      tc_TempControlMixedSeL4CAmKES_FanAck_Type_byOrdinal(SF (Option_36021E) &t_61, Z_C(0));
+      tc_TempControlMixedSeL4CAmKES_FanAck_Type t_62 = Option_36021E_get_(SF ((Option_36021E) &t_61));
+      tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api_put_fanAck_(SF ((tc_TempControlMixedSeL4CAmKES_Fan_Operational_Api) &t_60), t_62);
     }
   }
 }
@@ -647,7 +438,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logInfo(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(174);
+  sfUpdateLoc(152);
   {
     String_cprint(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_name_(tc_Fan_fp_ft_ft_seL4App_ftBridge(SF_LAST)), T);
   }
@@ -656,7 +447,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logInfo(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(175);
+  sfUpdateLoc(153);
   {
     String_cprint(string(": "), T);
   }
@@ -665,7 +456,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logInfo(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(176);
+  sfUpdateLoc(154);
   {
     String_cprint(msg, T);
     cprintln(T);
@@ -680,7 +471,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logDebug(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(186);
+  sfUpdateLoc(164);
   {
     String_cprint(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_name_(tc_Fan_fp_ft_ft_seL4App_ftBridge(SF_LAST)), T);
   }
@@ -689,7 +480,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logDebug(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(187);
+  sfUpdateLoc(165);
   {
     String_cprint(string(": "), T);
   }
@@ -698,7 +489,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logDebug(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(188);
+  sfUpdateLoc(166);
   {
     String_cprint(msg, T);
     cprintln(T);
@@ -713,7 +504,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logError(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(180);
+  sfUpdateLoc(158);
   {
     String_cprint(tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_Bridge_name_(tc_Fan_fp_ft_ft_seL4App_ftBridge(SF_LAST)), F);
   }
@@ -722,7 +513,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logError(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(181);
+  sfUpdateLoc(159);
   {
     String_cprint(string(": "), F);
   }
@@ -731,7 +522,7 @@ Unit tc_Fan_fp_ft_ft_seL4App_logError(STACK_FRAME String title, String msg) {
 
   #ifndef SIREUM_NO_PRINT
 
-  sfUpdateLoc(182);
+  sfUpdateLoc(160);
   {
     String_cprint(msg, F);
     cprintln(F);

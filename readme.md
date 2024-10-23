@@ -28,6 +28,8 @@ Compile/run the transpiled C project natively (requires cmake and a C compiler)
 ./hamr/c/bin/run.sh
 ```
 
+Or, compile/run the transpiled C project via docker
+
 ```bash
 ./hamr/slang/bin/transpile.cmd
 docker run --rm -it -w /root -v $(pwd):/root/sysml camkes.sireum sh -c \
@@ -40,8 +42,8 @@ NOTE: remove the ``--rm`` option if you want to reuse the container.  Replace ``
 
 
 Rerun codegen targeting seL4
+
 ```bash
-cd sysmlv2-models/models/temp-control/sysml-temp-control-mixed-sel4-camkes
 ./bin/run-hamr.cmd seL4
 
 # Add the missing stack size configuration entry for the temp control, otherwise
@@ -53,7 +55,6 @@ Refer [here](TempControlMixedCamkes.sysml#L103) for more information regarding s
 Build and simulate the CAmkES image via docker
 
 ```bash
-cd sysmlv2-models/models/temp-control/sysml-temp-control-mixed-sel4-camkes
 docker run --rm -it -w /root -v $(pwd):/root/sysml camkes.sireum sh -c \
     "/root/sysml/hamr/camkes/bin/run-camkes.sh -c /root/camkes -s"
 ```
