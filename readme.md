@@ -59,3 +59,4 @@ docker run --rm -it -w /root -v $(pwd):/root/sysml camkes.sireum sh -c \
     "/root/sysml/hamr/camkes/bin/run-camkes.sh -c /root/camkes -s"
 ```
 
+Type ``CTRL-a x`` to exit the QEMU simulation
