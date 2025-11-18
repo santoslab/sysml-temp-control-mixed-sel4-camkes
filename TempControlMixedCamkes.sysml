@@ -6,7 +6,7 @@ package TempControlMixedSeL4CAmKES {
 
   private import AADL::*;
   private import AADL_Project::*;
-  private import AADL_Project::Time_Units::*;
+  private import Time_Units::*;
   
   part def TempControlSystem :> System {
     part tsp: TempSensorProcess;
@@ -26,8 +26,8 @@ package TempControlMixedSeL4CAmKES {
   }
 
   part def TempControlProcessor :> Processor {
-    attribute Frame_Period: Timing_Properties::Frame_Period = 1000 [millisecond];
-    attribute Clock_Period: Timing_Properties::Clock_Period = 1 [millisecond];
+    attribute Frame_Period: Timing_Properties::Frame_Period = 1 [s];
+    attribute Clock_Period: Timing_Properties::Clock_Period = 1 [ms];
   }
 
   part def TempControlProcess :> Process {
@@ -76,7 +76,7 @@ package TempControlMixedSeL4CAmKES {
     out port tempChanged : EventPort;
     
     attribute :>> Dispatch_Protocol = Supported_Dispatch_Protocols::Periodic;
-    attribute :>> Period = 1000 [millisecond];
+    attribute :>> Period = 1 [s];
 
     language "GUMBO" /*{
 
@@ -98,7 +98,7 @@ package TempControlMixedSeL4CAmKES {
     out port fanCmd : EventDataPort { :> type : FanCmd; }
 
     attribute :>> Dispatch_Protocol = Supported_Dispatch_Protocols::Sporadic;
-    attribute :>> Period = 1000 [millisecond];
+    attribute :>> Period = 1 [s];
     
     // Memory_Propties::Stack_Size is not yet part of aadl.libraries
     // attribute :>> Stack_Size = 102400 bytes;
@@ -108,7 +108,7 @@ package TempControlMixedSeL4CAmKES {
         currentSetPoint: SetPoint;
         currentFanState: FanCmd;
         latestTemp: Temperature;
-        fanError: Base_Types::Boolean;
+        fanError: Base_Types::Data_Boolean;
 
       integration
         assume currentTempRange:
@@ -238,7 +238,7 @@ package TempControlMixedSeL4CAmKES {
 
   part def Temperature :> Data {
 
-    part degrees : Base_Types::Float_32;
+    part degrees : Base_Types::Data_Float_32;
     attribute unit : TempUnit;
 
     language "GUMBO" /*{
