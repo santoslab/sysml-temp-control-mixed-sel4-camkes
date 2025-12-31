@@ -4,9 +4,7 @@
 
 package TempControlMixedSeL4CAmKES {
 
-  private import AADL::*;
-  private import AADL_Project::*;
-  private import HAMR::Time_Units::*;
+  private import HAMR::*;
   
   part def TempControlSystem :> System {
     part tsp: TempSensorProcess;
@@ -26,52 +24,52 @@ package TempControlMixedSeL4CAmKES {
   }
 
   part def TempControlProcessor :> Processor {
-    attribute Frame_Period: Timing_Properties::Frame_Period = 1000 [ms];
-    attribute Clock_Period: Timing_Properties::Clock_Period = 1 [ms];
+    attribute :>> Frame_Period = 1000 [ms];
+    attribute :>> Clock_Period = 1 [ms];
   }
 
   part def TempControlProcess :> Process {
     part tct : TempControl;
 
-    in port currentTemp : DataPort { :> type : Temperature; }
+    in port currentTemp : DataPort { :>> type : Temperature; }
     in port tempChanged : EventPort;
-    in port fanAck : EventDataPort { :> type : FanAck; }
-    out port fanCmd : EventDataPort { :> type : FanCmd; }
+    in port fanAck : EventDataPort { :>> type : FanAck; }
+    out port fanCmd : EventDataPort { :>> type : FanCmd; }
 
     connection ctTCPtoTC : PortConnection connect currentTemp to tct.currentTemp;
     connection tcTCPtoTC : PortConnection connect tempChanged to tct.tempChanged;
     connection faTCPtoTC : PortConnection connect fanAck to tct.fanAck;
     connection fcTCtoTCP : PortConnection connect tct.fanCmd to fanCmd;
 
-    attribute Domain: CASE_Scheduling::Domain = 2;
+    attribute :>> Domain = 2;
   }
 
   part def TempSensorProcess :> Process {
     part tst : TempSensor;
 
-    out port currentTemp : DataPort { :> type : Temperature; }
+    out port currentTemp : DataPort { :>> type : Temperature; }
     out port tempChanged : EventPort;
 
     connection ctTStoTSP : PortConnection connect tst.currentTemp to currentTemp;
     connection tcTStoTSP : PortConnection connect tst.tempChanged to tempChanged;
 
-    attribute Domain: CASE_Scheduling::Domain = 3;
+    attribute :>> Domain = 3;
   }
 
   part def FanProcess :> Process {
     part ft : Fan;
 
-    in port fanCmd : EventDataPort { in :> type : FanCmd; }
-    out port fanAck : EventDataPort { out :> type : FanAck; }
+    in port fanCmd : EventDataPort { in :>> type : FanCmd; }
+    out port fanAck : EventDataPort { out :>> type : FanAck; }
 
     connection fcFtoFP : PortConnection connect fanCmd to ft.fanCmd;
     connection faFPtoF : PortConnection connect ft.fanAck to fanAck;
 
-    attribute Domain: CASE_Scheduling::Domain = 4;    
+    attribute :>> Domain = 4;
   }
 
   part def TempSensor :> Thread {
-    out port currentTemp : DataPort { :> type : Temperature; }
+    out port currentTemp : DataPort { :>> type : Temperature; }
 
     out port tempChanged : EventPort;
     
@@ -91,11 +89,11 @@ package TempControlMixedSeL4CAmKES {
   }
 
   part def TempControl :> Thread {
-    in port currentTemp : DataPort { :> type : Temperature; }
+    in port currentTemp : DataPort { :>> type : Temperature; }
     in port tempChanged : EventPort;
-    in port fanAck : EventDataPort { :> type : FanAck; }
-    in port setPoint : EventDataPort { :> type : SetPoint; }
-    out port fanCmd : EventDataPort { :> type : FanCmd; }
+    in port fanAck : EventDataPort { :>> type : FanAck; }
+    in port setPoint : EventDataPort { :>> type : SetPoint; }
+    out port fanCmd : EventDataPort { :>> type : FanCmd; }
 
     attribute :>> Dispatch_Protocol = Supported_Dispatch_Protocols::Sporadic;
     attribute :>> Period = 1000 [ms];
@@ -230,8 +228,8 @@ package TempControlMixedSeL4CAmKES {
   }
 
   part def Fan :> Thread {
-    in port fanCmd : EventDataPort { in :> type : FanCmd; }
-    out port fanAck : EventDataPort { out :> type : FanAck; }
+    in port fanCmd : EventDataPort { in :>> type : FanCmd; }
+    out port fanAck : EventDataPort { out :>> type : FanAck; }
 
     attribute :>> Dispatch_Protocol = Supported_Dispatch_Protocols::Sporadic;
   }
