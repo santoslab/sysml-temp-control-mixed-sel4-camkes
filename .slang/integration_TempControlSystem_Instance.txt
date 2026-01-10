@@ -1,0 +1,10 @@
+System Root: TempControlSystem_Instance [[/TempControlMixedCamkes.sysml, 9, 2]]
+
+Connection Instance: TempControlSystem_Instance.tsp.tst.currentTemp -> TempControlSystem_Instance.tcp.tct.currentTemp
+
+  Connection References: [TempControlSystem_Instance.tsp.ctTStoTSP, [/TempControlMixedCamkes.sysml, 53, 4]] -> [TempControlSystem_Instance.ctTStoTC, [/TempControlMixedCamkes.sysml, 16, 4]] -> [TempControlSystem_Instance.tcp.ctTCPtoTC, [/TempControlMixedCamkes.sysml, 39, 4]]
+
+   currentTemp.degrees >= -40.0f &
+     currentTemp.degrees <= 122.0f __>:
+     currentTemp.degrees >= -128.6f &
+       currentTemp.degrees <= 134.0f
