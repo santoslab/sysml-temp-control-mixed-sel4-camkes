@@ -7756,18 +7756,40 @@
                               "left" : {
                                 "type" : "org.sireum.lang.ast.Exp.Binary",
                                 "left" : {
-                                  "type" : "org.sireum.lang.ast.Exp.Unary",
-                                  "op" : {
-                                    "type" : "org.sireum.lang.ast.Exp.UnaryOp",
-                                    "value" : "Not"
-                                  },
-                                  "exp" : {
-                                    "type" : "org.sireum.lang.ast.Exp.Ident",
-                                    "id" : {
-                                      "type" : "org.sireum.lang.ast.Id",
-                                      "value" : "fanError",
+                                  "type" : "org.sireum.lang.ast.Exp.Binary",
+                                  "left" : {
+                                    "type" : "org.sireum.lang.ast.Exp.Unary",
+                                    "op" : {
+                                      "type" : "org.sireum.lang.ast.Exp.UnaryOp",
+                                      "value" : "Not"
+                                    },
+                                    "exp" : {
+                                      "type" : "org.sireum.lang.ast.Exp.Ident",
+                                      "id" : {
+                                        "type" : "org.sireum.lang.ast.Id",
+                                        "value" : "fanError",
+                                        "attr" : {
+                                          "type" : "org.sireum.lang.ast.Attr",
+                                          "posOpt" : {
+                                            "type" : "Some",
+                                            "value" : {
+                                              "type" : "Position",
+                                              "uriOpt" : {
+                                                "type" : "Some",
+                                                "value" : "\/TempControlMixedCamkes.sysml"
+                                              },
+                                              "beginLine" : 165,
+                                              "beginColumn" : 20,
+                                              "endLine" : 165,
+                                              "endColumn" : 27,
+                                              "offset" : 6618,
+                                              "length" : 8
+                                            }
+                                          }
+                                        }
+                                      },
                                       "attr" : {
-                                        "type" : "org.sireum.lang.ast.Attr",
+                                        "type" : "org.sireum.lang.ast.ResolvedAttr",
                                         "posOpt" : {
                                           "type" : "Some",
                                           "value" : {
@@ -7783,6 +7805,12 @@
                                             "offset" : 6618,
                                             "length" : 8
                                           }
+                                        },
+                                        "resOpt" : {
+                                          "type" : "None"
+                                        },
+                                        "typedOpt" : {
+                                          "type" : "None"
                                         }
                                       }
                                     },
@@ -7797,11 +7825,11 @@
                                             "value" : "\/TempControlMixedCamkes.sysml"
                                           },
                                           "beginLine" : 165,
-                                          "beginColumn" : 20,
+                                          "beginColumn" : 16,
                                           "endLine" : 165,
-                                          "endColumn" : 27,
-                                          "offset" : 6618,
-                                          "length" : 8
+                                          "endColumn" : 20,
+                                          "offset" : 6614,
+                                          "length" : 4
                                         }
                                       },
                                       "resOpt" : {
@@ -7810,11 +7838,8 @@
                                       "typedOpt" : {
                                         "type" : "None"
                                       }
-                                    }
-                                  },
-                                  "attr" : {
-                                    "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                    "posOpt" : {
+                                    },
+                                    "opPosOpt" : {
                                       "type" : "Some",
                                       "value" : {
                                         "type" : "Position",
@@ -7829,35 +7854,10 @@
                                         "offset" : 6614,
                                         "length" : 4
                                       }
-                                    },
-                                    "resOpt" : {
-                                      "type" : "None"
-                                    },
-                                    "typedOpt" : {
-                                      "type" : "None"
                                     }
                                   },
-                                  "opPosOpt" : {
-                                    "type" : "Some",
-                                    "value" : {
-                                      "type" : "Position",
-                                      "uriOpt" : {
-                                        "type" : "Some",
-                                        "value" : "\/TempControlMixedCamkes.sysml"
-                                      },
-                                      "beginLine" : 165,
-                                      "beginColumn" : 16,
-                                      "endLine" : 165,
-                                      "endColumn" : 20,
-                                      "offset" : 6614,
-                                      "length" : 4
-                                    }
-                                  }
-                                },
-                                "op" : "&",
-                                "right" : {
-                                  "type" : "org.sireum.lang.ast.Exp.Binary",
-                                  "left" : {
+                                  "op" : "&",
+                                  "right" : {
                                     "type" : "org.sireum.lang.ast.Exp.Binary",
                                     "left" : {
                                       "type" : "org.sireum.lang.ast.Exp.Select",
@@ -8172,322 +8172,6 @@
                                       }
                                     }
                                   },
-                                  "op" : "&",
-                                  "right" : {
-                                    "type" : "org.sireum.lang.ast.Exp.Binary",
-                                    "left" : {
-                                      "type" : "org.sireum.lang.ast.Exp.Select",
-                                      "receiverOpt" : {
-                                        "type" : "Some",
-                                        "value" : {
-                                          "type" : "org.sireum.lang.ast.Exp.Ident",
-                                          "id" : {
-                                            "type" : "org.sireum.lang.ast.Id",
-                                            "value" : "latestTemp",
-                                            "attr" : {
-                                              "type" : "org.sireum.lang.ast.Attr",
-                                              "posOpt" : {
-                                                "type" : "Some",
-                                                "value" : {
-                                                  "type" : "Position",
-                                                  "uriOpt" : {
-                                                    "type" : "Some",
-                                                    "value" : "\/TempControlMixedCamkes.sysml"
-                                                  },
-                                                  "beginLine" : 165,
-                                                  "beginColumn" : 83,
-                                                  "endLine" : 165,
-                                                  "endColumn" : 92,
-                                                  "offset" : 6681,
-                                                  "length" : 10
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "attr" : {
-                                            "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                            "posOpt" : {
-                                              "type" : "Some",
-                                              "value" : {
-                                                "type" : "Position",
-                                                "uriOpt" : {
-                                                  "type" : "Some",
-                                                  "value" : "\/TempControlMixedCamkes.sysml"
-                                                },
-                                                "beginLine" : 165,
-                                                "beginColumn" : 83,
-                                                "endLine" : 165,
-                                                "endColumn" : 92,
-                                                "offset" : 6681,
-                                                "length" : 10
-                                              }
-                                            },
-                                            "resOpt" : {
-                                              "type" : "None"
-                                            },
-                                            "typedOpt" : {
-                                              "type" : "None"
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "id" : {
-                                        "type" : "org.sireum.lang.ast.Id",
-                                        "value" : "degrees",
-                                        "attr" : {
-                                          "type" : "org.sireum.lang.ast.Attr",
-                                          "posOpt" : {
-                                            "type" : "Some",
-                                            "value" : {
-                                              "type" : "Position",
-                                              "uriOpt" : {
-                                                "type" : "Some",
-                                                "value" : "\/TempControlMixedCamkes.sysml"
-                                              },
-                                              "beginLine" : 165,
-                                              "beginColumn" : 94,
-                                              "endLine" : 165,
-                                              "endColumn" : 100,
-                                              "offset" : 6692,
-                                              "length" : 7
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "targs" : [
-                                      ],
-                                      "attr" : {
-                                        "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                        "posOpt" : {
-                                          "type" : "Some",
-                                          "value" : {
-                                            "type" : "Position",
-                                            "uriOpt" : {
-                                              "type" : "Some",
-                                              "value" : "\/TempControlMixedCamkes.sysml"
-                                            },
-                                            "beginLine" : 165,
-                                            "beginColumn" : 83,
-                                            "endLine" : 165,
-                                            "endColumn" : 100,
-                                            "offset" : 6681,
-                                            "length" : 18
-                                          }
-                                        },
-                                        "resOpt" : {
-                                          "type" : "None"
-                                        },
-                                        "typedOpt" : {
-                                          "type" : "None"
-                                        }
-                                      }
-                                    },
-                                    "op" : "<=",
-                                    "right" : {
-                                      "type" : "org.sireum.lang.ast.Exp.Select",
-                                      "receiverOpt" : {
-                                        "type" : "Some",
-                                        "value" : {
-                                          "type" : "org.sireum.lang.ast.Exp.Select",
-                                          "receiverOpt" : {
-                                            "type" : "Some",
-                                            "value" : {
-                                              "type" : "org.sireum.lang.ast.Exp.Ident",
-                                              "id" : {
-                                                "type" : "org.sireum.lang.ast.Id",
-                                                "value" : "currentSetPoint",
-                                                "attr" : {
-                                                  "type" : "org.sireum.lang.ast.Attr",
-                                                  "posOpt" : {
-                                                    "type" : "Some",
-                                                    "value" : {
-                                                      "type" : "Position",
-                                                      "uriOpt" : {
-                                                        "type" : "Some",
-                                                        "value" : "\/TempControlMixedCamkes.sysml"
-                                                      },
-                                                      "beginLine" : 165,
-                                                      "beginColumn" : 105,
-                                                      "endLine" : 165,
-                                                      "endColumn" : 119,
-                                                      "offset" : 6703,
-                                                      "length" : 15
-                                                    }
-                                                  }
-                                                }
-                                              },
-                                              "attr" : {
-                                                "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                                "posOpt" : {
-                                                  "type" : "Some",
-                                                  "value" : {
-                                                    "type" : "Position",
-                                                    "uriOpt" : {
-                                                      "type" : "Some",
-                                                      "value" : "\/TempControlMixedCamkes.sysml"
-                                                    },
-                                                    "beginLine" : 165,
-                                                    "beginColumn" : 105,
-                                                    "endLine" : 165,
-                                                    "endColumn" : 119,
-                                                    "offset" : 6703,
-                                                    "length" : 15
-                                                  }
-                                                },
-                                                "resOpt" : {
-                                                  "type" : "None"
-                                                },
-                                                "typedOpt" : {
-                                                  "type" : "None"
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "id" : {
-                                            "type" : "org.sireum.lang.ast.Id",
-                                            "value" : "high",
-                                            "attr" : {
-                                              "type" : "org.sireum.lang.ast.Attr",
-                                              "posOpt" : {
-                                                "type" : "Some",
-                                                "value" : {
-                                                  "type" : "Position",
-                                                  "uriOpt" : {
-                                                    "type" : "Some",
-                                                    "value" : "\/TempControlMixedCamkes.sysml"
-                                                  },
-                                                  "beginLine" : 165,
-                                                  "beginColumn" : 121,
-                                                  "endLine" : 165,
-                                                  "endColumn" : 124,
-                                                  "offset" : 6719,
-                                                  "length" : 4
-                                                }
-                                              }
-                                            }
-                                          },
-                                          "targs" : [
-                                          ],
-                                          "attr" : {
-                                            "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                            "posOpt" : {
-                                              "type" : "Some",
-                                              "value" : {
-                                                "type" : "Position",
-                                                "uriOpt" : {
-                                                  "type" : "Some",
-                                                  "value" : "\/TempControlMixedCamkes.sysml"
-                                                },
-                                                "beginLine" : 165,
-                                                "beginColumn" : 105,
-                                                "endLine" : 165,
-                                                "endColumn" : 124,
-                                                "offset" : 6703,
-                                                "length" : 20
-                                              }
-                                            },
-                                            "resOpt" : {
-                                              "type" : "None"
-                                            },
-                                            "typedOpt" : {
-                                              "type" : "None"
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "id" : {
-                                        "type" : "org.sireum.lang.ast.Id",
-                                        "value" : "degrees",
-                                        "attr" : {
-                                          "type" : "org.sireum.lang.ast.Attr",
-                                          "posOpt" : {
-                                            "type" : "Some",
-                                            "value" : {
-                                              "type" : "Position",
-                                              "uriOpt" : {
-                                                "type" : "Some",
-                                                "value" : "\/TempControlMixedCamkes.sysml"
-                                              },
-                                              "beginLine" : 165,
-                                              "beginColumn" : 126,
-                                              "endLine" : 165,
-                                              "endColumn" : 132,
-                                              "offset" : 6724,
-                                              "length" : 7
-                                            }
-                                          }
-                                        }
-                                      },
-                                      "targs" : [
-                                      ],
-                                      "attr" : {
-                                        "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                        "posOpt" : {
-                                          "type" : "Some",
-                                          "value" : {
-                                            "type" : "Position",
-                                            "uriOpt" : {
-                                              "type" : "Some",
-                                              "value" : "\/TempControlMixedCamkes.sysml"
-                                            },
-                                            "beginLine" : 165,
-                                            "beginColumn" : 105,
-                                            "endLine" : 165,
-                                            "endColumn" : 132,
-                                            "offset" : 6703,
-                                            "length" : 28
-                                          }
-                                        },
-                                        "resOpt" : {
-                                          "type" : "None"
-                                        },
-                                        "typedOpt" : {
-                                          "type" : "None"
-                                        }
-                                      }
-                                    },
-                                    "attr" : {
-                                      "type" : "org.sireum.lang.ast.ResolvedAttr",
-                                      "posOpt" : {
-                                        "type" : "Some",
-                                        "value" : {
-                                          "type" : "Position",
-                                          "uriOpt" : {
-                                            "type" : "Some",
-                                            "value" : "\/TempControlMixedCamkes.sysml"
-                                          },
-                                          "beginLine" : 165,
-                                          "beginColumn" : 83,
-                                          "endLine" : 165,
-                                          "endColumn" : 132,
-                                          "offset" : 6681,
-                                          "length" : 50
-                                        }
-                                      },
-                                      "resOpt" : {
-                                        "type" : "None"
-                                      },
-                                      "typedOpt" : {
-                                        "type" : "None"
-                                      }
-                                    },
-                                    "opPosOpt" : {
-                                      "type" : "Some",
-                                      "value" : {
-                                        "type" : "Position",
-                                        "uriOpt" : {
-                                          "type" : "Some",
-                                          "value" : "\/TempControlMixedCamkes.sysml"
-                                        },
-                                        "beginLine" : 165,
-                                        "beginColumn" : 83,
-                                        "endLine" : 165,
-                                        "endColumn" : 132,
-                                        "offset" : 6681,
-                                        "length" : 50
-                                      }
-                                    }
-                                  },
                                   "attr" : {
                                     "type" : "org.sireum.lang.ast.ResolvedAttr",
                                     "posOpt" : {
@@ -8499,11 +8183,11 @@
                                           "value" : "\/TempControlMixedCamkes.sysml"
                                         },
                                         "beginLine" : 165,
-                                        "beginColumn" : 31,
+                                        "beginColumn" : 16,
                                         "endLine" : 165,
-                                        "endColumn" : 132,
-                                        "offset" : 6629,
-                                        "length" : 102
+                                        "endColumn" : 79,
+                                        "offset" : 6614,
+                                        "length" : 64
                                       }
                                     },
                                     "resOpt" : {
@@ -8522,11 +8206,327 @@
                                         "value" : "\/TempControlMixedCamkes.sysml"
                                       },
                                       "beginLine" : 165,
-                                      "beginColumn" : 31,
+                                      "beginColumn" : 16,
+                                      "endLine" : 165,
+                                      "endColumn" : 79,
+                                      "offset" : 6614,
+                                      "length" : 64
+                                    }
+                                  }
+                                },
+                                "op" : "&",
+                                "right" : {
+                                  "type" : "org.sireum.lang.ast.Exp.Binary",
+                                  "left" : {
+                                    "type" : "org.sireum.lang.ast.Exp.Select",
+                                    "receiverOpt" : {
+                                      "type" : "Some",
+                                      "value" : {
+                                        "type" : "org.sireum.lang.ast.Exp.Ident",
+                                        "id" : {
+                                          "type" : "org.sireum.lang.ast.Id",
+                                          "value" : "latestTemp",
+                                          "attr" : {
+                                            "type" : "org.sireum.lang.ast.Attr",
+                                            "posOpt" : {
+                                              "type" : "Some",
+                                              "value" : {
+                                                "type" : "Position",
+                                                "uriOpt" : {
+                                                  "type" : "Some",
+                                                  "value" : "\/TempControlMixedCamkes.sysml"
+                                                },
+                                                "beginLine" : 165,
+                                                "beginColumn" : 83,
+                                                "endLine" : 165,
+                                                "endColumn" : 92,
+                                                "offset" : 6681,
+                                                "length" : 10
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "attr" : {
+                                          "type" : "org.sireum.lang.ast.ResolvedAttr",
+                                          "posOpt" : {
+                                            "type" : "Some",
+                                            "value" : {
+                                              "type" : "Position",
+                                              "uriOpt" : {
+                                                "type" : "Some",
+                                                "value" : "\/TempControlMixedCamkes.sysml"
+                                              },
+                                              "beginLine" : 165,
+                                              "beginColumn" : 83,
+                                              "endLine" : 165,
+                                              "endColumn" : 92,
+                                              "offset" : 6681,
+                                              "length" : 10
+                                            }
+                                          },
+                                          "resOpt" : {
+                                            "type" : "None"
+                                          },
+                                          "typedOpt" : {
+                                            "type" : "None"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "id" : {
+                                      "type" : "org.sireum.lang.ast.Id",
+                                      "value" : "degrees",
+                                      "attr" : {
+                                        "type" : "org.sireum.lang.ast.Attr",
+                                        "posOpt" : {
+                                          "type" : "Some",
+                                          "value" : {
+                                            "type" : "Position",
+                                            "uriOpt" : {
+                                              "type" : "Some",
+                                              "value" : "\/TempControlMixedCamkes.sysml"
+                                            },
+                                            "beginLine" : 165,
+                                            "beginColumn" : 94,
+                                            "endLine" : 165,
+                                            "endColumn" : 100,
+                                            "offset" : 6692,
+                                            "length" : 7
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "targs" : [
+                                    ],
+                                    "attr" : {
+                                      "type" : "org.sireum.lang.ast.ResolvedAttr",
+                                      "posOpt" : {
+                                        "type" : "Some",
+                                        "value" : {
+                                          "type" : "Position",
+                                          "uriOpt" : {
+                                            "type" : "Some",
+                                            "value" : "\/TempControlMixedCamkes.sysml"
+                                          },
+                                          "beginLine" : 165,
+                                          "beginColumn" : 83,
+                                          "endLine" : 165,
+                                          "endColumn" : 100,
+                                          "offset" : 6681,
+                                          "length" : 18
+                                        }
+                                      },
+                                      "resOpt" : {
+                                        "type" : "None"
+                                      },
+                                      "typedOpt" : {
+                                        "type" : "None"
+                                      }
+                                    }
+                                  },
+                                  "op" : "<=",
+                                  "right" : {
+                                    "type" : "org.sireum.lang.ast.Exp.Select",
+                                    "receiverOpt" : {
+                                      "type" : "Some",
+                                      "value" : {
+                                        "type" : "org.sireum.lang.ast.Exp.Select",
+                                        "receiverOpt" : {
+                                          "type" : "Some",
+                                          "value" : {
+                                            "type" : "org.sireum.lang.ast.Exp.Ident",
+                                            "id" : {
+                                              "type" : "org.sireum.lang.ast.Id",
+                                              "value" : "currentSetPoint",
+                                              "attr" : {
+                                                "type" : "org.sireum.lang.ast.Attr",
+                                                "posOpt" : {
+                                                  "type" : "Some",
+                                                  "value" : {
+                                                    "type" : "Position",
+                                                    "uriOpt" : {
+                                                      "type" : "Some",
+                                                      "value" : "\/TempControlMixedCamkes.sysml"
+                                                    },
+                                                    "beginLine" : 165,
+                                                    "beginColumn" : 105,
+                                                    "endLine" : 165,
+                                                    "endColumn" : 119,
+                                                    "offset" : 6703,
+                                                    "length" : 15
+                                                  }
+                                                }
+                                              }
+                                            },
+                                            "attr" : {
+                                              "type" : "org.sireum.lang.ast.ResolvedAttr",
+                                              "posOpt" : {
+                                                "type" : "Some",
+                                                "value" : {
+                                                  "type" : "Position",
+                                                  "uriOpt" : {
+                                                    "type" : "Some",
+                                                    "value" : "\/TempControlMixedCamkes.sysml"
+                                                  },
+                                                  "beginLine" : 165,
+                                                  "beginColumn" : 105,
+                                                  "endLine" : 165,
+                                                  "endColumn" : 119,
+                                                  "offset" : 6703,
+                                                  "length" : 15
+                                                }
+                                              },
+                                              "resOpt" : {
+                                                "type" : "None"
+                                              },
+                                              "typedOpt" : {
+                                                "type" : "None"
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "id" : {
+                                          "type" : "org.sireum.lang.ast.Id",
+                                          "value" : "high",
+                                          "attr" : {
+                                            "type" : "org.sireum.lang.ast.Attr",
+                                            "posOpt" : {
+                                              "type" : "Some",
+                                              "value" : {
+                                                "type" : "Position",
+                                                "uriOpt" : {
+                                                  "type" : "Some",
+                                                  "value" : "\/TempControlMixedCamkes.sysml"
+                                                },
+                                                "beginLine" : 165,
+                                                "beginColumn" : 121,
+                                                "endLine" : 165,
+                                                "endColumn" : 124,
+                                                "offset" : 6719,
+                                                "length" : 4
+                                              }
+                                            }
+                                          }
+                                        },
+                                        "targs" : [
+                                        ],
+                                        "attr" : {
+                                          "type" : "org.sireum.lang.ast.ResolvedAttr",
+                                          "posOpt" : {
+                                            "type" : "Some",
+                                            "value" : {
+                                              "type" : "Position",
+                                              "uriOpt" : {
+                                                "type" : "Some",
+                                                "value" : "\/TempControlMixedCamkes.sysml"
+                                              },
+                                              "beginLine" : 165,
+                                              "beginColumn" : 105,
+                                              "endLine" : 165,
+                                              "endColumn" : 124,
+                                              "offset" : 6703,
+                                              "length" : 20
+                                            }
+                                          },
+                                          "resOpt" : {
+                                            "type" : "None"
+                                          },
+                                          "typedOpt" : {
+                                            "type" : "None"
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "id" : {
+                                      "type" : "org.sireum.lang.ast.Id",
+                                      "value" : "degrees",
+                                      "attr" : {
+                                        "type" : "org.sireum.lang.ast.Attr",
+                                        "posOpt" : {
+                                          "type" : "Some",
+                                          "value" : {
+                                            "type" : "Position",
+                                            "uriOpt" : {
+                                              "type" : "Some",
+                                              "value" : "\/TempControlMixedCamkes.sysml"
+                                            },
+                                            "beginLine" : 165,
+                                            "beginColumn" : 126,
+                                            "endLine" : 165,
+                                            "endColumn" : 132,
+                                            "offset" : 6724,
+                                            "length" : 7
+                                          }
+                                        }
+                                      }
+                                    },
+                                    "targs" : [
+                                    ],
+                                    "attr" : {
+                                      "type" : "org.sireum.lang.ast.ResolvedAttr",
+                                      "posOpt" : {
+                                        "type" : "Some",
+                                        "value" : {
+                                          "type" : "Position",
+                                          "uriOpt" : {
+                                            "type" : "Some",
+                                            "value" : "\/TempControlMixedCamkes.sysml"
+                                          },
+                                          "beginLine" : 165,
+                                          "beginColumn" : 105,
+                                          "endLine" : 165,
+                                          "endColumn" : 132,
+                                          "offset" : 6703,
+                                          "length" : 28
+                                        }
+                                      },
+                                      "resOpt" : {
+                                        "type" : "None"
+                                      },
+                                      "typedOpt" : {
+                                        "type" : "None"
+                                      }
+                                    }
+                                  },
+                                  "attr" : {
+                                    "type" : "org.sireum.lang.ast.ResolvedAttr",
+                                    "posOpt" : {
+                                      "type" : "Some",
+                                      "value" : {
+                                        "type" : "Position",
+                                        "uriOpt" : {
+                                          "type" : "Some",
+                                          "value" : "\/TempControlMixedCamkes.sysml"
+                                        },
+                                        "beginLine" : 165,
+                                        "beginColumn" : 83,
+                                        "endLine" : 165,
+                                        "endColumn" : 132,
+                                        "offset" : 6681,
+                                        "length" : 50
+                                      }
+                                    },
+                                    "resOpt" : {
+                                      "type" : "None"
+                                    },
+                                    "typedOpt" : {
+                                      "type" : "None"
+                                    }
+                                  },
+                                  "opPosOpt" : {
+                                    "type" : "Some",
+                                    "value" : {
+                                      "type" : "Position",
+                                      "uriOpt" : {
+                                        "type" : "Some",
+                                        "value" : "\/TempControlMixedCamkes.sysml"
+                                      },
+                                      "beginLine" : 165,
+                                      "beginColumn" : 83,
                                       "endLine" : 165,
                                       "endColumn" : 132,
-                                      "offset" : 6629,
-                                      "length" : 102
+                                      "offset" : 6681,
+                                      "length" : 50
                                     }
                                   }
                                 },
@@ -17181,16 +17181,38 @@
                   "left" : {
                     "type" : "org.sireum.lang.ast.Exp.Binary",
                     "left" : {
-                      "type" : "org.sireum.lang.ast.Exp.Select",
-                      "receiverOpt" : {
-                        "type" : "Some",
-                        "value" : {
-                          "type" : "org.sireum.lang.ast.Exp.Ident",
-                          "id" : {
-                            "type" : "org.sireum.lang.ast.Id",
-                            "value" : "low",
+                      "type" : "org.sireum.lang.ast.Exp.Binary",
+                      "left" : {
+                        "type" : "org.sireum.lang.ast.Exp.Select",
+                        "receiverOpt" : {
+                          "type" : "Some",
+                          "value" : {
+                            "type" : "org.sireum.lang.ast.Exp.Ident",
+                            "id" : {
+                              "type" : "org.sireum.lang.ast.Id",
+                              "value" : "low",
+                              "attr" : {
+                                "type" : "org.sireum.lang.ast.Attr",
+                                "posOpt" : {
+                                  "type" : "Some",
+                                  "value" : {
+                                    "type" : "Position",
+                                    "uriOpt" : {
+                                      "type" : "Some",
+                                      "value" : "\/TempControlMixedCamkes.sysml"
+                                    },
+                                    "beginLine" : 262,
+                                    "beginColumn" : 11,
+                                    "endLine" : 262,
+                                    "endColumn" : 13,
+                                    "offset" : 10227,
+                                    "length" : 3
+                                  }
+                                }
+                              }
+                            },
                             "attr" : {
-                              "type" : "org.sireum.lang.ast.Attr",
+                              "type" : "org.sireum.lang.ast.ResolvedAttr",
                               "posOpt" : {
                                 "type" : "Some",
                                 "value" : {
@@ -17206,11 +17228,21 @@
                                   "offset" : 10227,
                                   "length" : 3
                                 }
+                              },
+                              "resOpt" : {
+                                "type" : "None"
+                              },
+                              "typedOpt" : {
+                                "type" : "None"
                               }
                             }
-                          },
+                          }
+                        },
+                        "id" : {
+                          "type" : "org.sireum.lang.ast.Id",
+                          "value" : "degrees",
                           "attr" : {
-                            "type" : "org.sireum.lang.ast.ResolvedAttr",
+                            "type" : "org.sireum.lang.ast.Attr",
                             "posOpt" : {
                               "type" : "Some",
                               "value" : {
@@ -17220,25 +17252,47 @@
                                   "value" : "\/TempControlMixedCamkes.sysml"
                                 },
                                 "beginLine" : 262,
-                                "beginColumn" : 11,
+                                "beginColumn" : 15,
                                 "endLine" : 262,
-                                "endColumn" : 13,
-                                "offset" : 10227,
-                                "length" : 3
+                                "endColumn" : 21,
+                                "offset" : 10231,
+                                "length" : 7
                               }
-                            },
-                            "resOpt" : {
-                              "type" : "None"
-                            },
-                            "typedOpt" : {
-                              "type" : "None"
                             }
+                          }
+                        },
+                        "targs" : [
+                        ],
+                        "attr" : {
+                          "type" : "org.sireum.lang.ast.ResolvedAttr",
+                          "posOpt" : {
+                            "type" : "Some",
+                            "value" : {
+                              "type" : "Position",
+                              "uriOpt" : {
+                                "type" : "Some",
+                                "value" : "\/TempControlMixedCamkes.sysml"
+                              },
+                              "beginLine" : 262,
+                              "beginColumn" : 11,
+                              "endLine" : 262,
+                              "endColumn" : 21,
+                              "offset" : 10227,
+                              "length" : 11
+                            }
+                          },
+                          "resOpt" : {
+                            "type" : "None"
+                          },
+                          "typedOpt" : {
+                            "type" : "None"
                           }
                         }
                       },
-                      "id" : {
-                        "type" : "org.sireum.lang.ast.Id",
-                        "value" : "degrees",
+                      "op" : ">=",
+                      "right" : {
+                        "type" : "org.sireum.lang.ast.Exp.LitF32",
+                        "value" : 50.0,
                         "attr" : {
                           "type" : "org.sireum.lang.ast.Attr",
                           "posOpt" : {
@@ -17250,17 +17304,15 @@
                                 "value" : "\/TempControlMixedCamkes.sysml"
                               },
                               "beginLine" : 262,
-                              "beginColumn" : 15,
+                              "beginColumn" : 26,
                               "endLine" : 262,
-                              "endColumn" : 21,
-                              "offset" : 10231,
+                              "endColumn" : 33,
+                              "offset" : 10242,
                               "length" : 7
                             }
                           }
                         }
                       },
-                      "targs" : [
-                      ],
                       "attr" : {
                         "type" : "org.sireum.lang.ast.ResolvedAttr",
                         "posOpt" : {
@@ -17274,9 +17326,9 @@
                             "beginLine" : 262,
                             "beginColumn" : 11,
                             "endLine" : 262,
-                            "endColumn" : 21,
+                            "endColumn" : 33,
                             "offset" : 10227,
-                            "length" : 11
+                            "length" : 22
                           }
                         },
                         "resOpt" : {
@@ -17285,35 +17337,8 @@
                         "typedOpt" : {
                           "type" : "None"
                         }
-                      }
-                    },
-                    "op" : ">=",
-                    "right" : {
-                      "type" : "org.sireum.lang.ast.Exp.LitF32",
-                      "value" : 50.0,
-                      "attr" : {
-                        "type" : "org.sireum.lang.ast.Attr",
-                        "posOpt" : {
-                          "type" : "Some",
-                          "value" : {
-                            "type" : "Position",
-                            "uriOpt" : {
-                              "type" : "Some",
-                              "value" : "\/TempControlMixedCamkes.sysml"
-                            },
-                            "beginLine" : 262,
-                            "beginColumn" : 26,
-                            "endLine" : 262,
-                            "endColumn" : 33,
-                            "offset" : 10242,
-                            "length" : 7
-                          }
-                        }
-                      }
-                    },
-                    "attr" : {
-                      "type" : "org.sireum.lang.ast.ResolvedAttr",
-                      "posOpt" : {
+                      },
+                      "opPosOpt" : {
                         "type" : "Some",
                         "value" : {
                           "type" : "Position",
@@ -17328,35 +17353,10 @@
                           "offset" : 10227,
                           "length" : 22
                         }
-                      },
-                      "resOpt" : {
-                        "type" : "None"
-                      },
-                      "typedOpt" : {
-                        "type" : "None"
                       }
                     },
-                    "opPosOpt" : {
-                      "type" : "Some",
-                      "value" : {
-                        "type" : "Position",
-                        "uriOpt" : {
-                          "type" : "Some",
-                          "value" : "\/TempControlMixedCamkes.sysml"
-                        },
-                        "beginLine" : 262,
-                        "beginColumn" : 11,
-                        "endLine" : 262,
-                        "endColumn" : 33,
-                        "offset" : 10227,
-                        "length" : 22
-                      }
-                    }
-                  },
-                  "op" : "&",
-                  "right" : {
-                    "type" : "org.sireum.lang.ast.Exp.Binary",
-                    "left" : {
+                    "op" : "&",
+                    "right" : {
                       "type" : "org.sireum.lang.ast.Exp.Binary",
                       "left" : {
                         "type" : "org.sireum.lang.ast.Exp.Select",
@@ -17531,266 +17531,6 @@
                         }
                       }
                     },
-                    "op" : "&",
-                    "right" : {
-                      "type" : "org.sireum.lang.ast.Exp.Binary",
-                      "left" : {
-                        "type" : "org.sireum.lang.ast.Exp.Select",
-                        "receiverOpt" : {
-                          "type" : "Some",
-                          "value" : {
-                            "type" : "org.sireum.lang.ast.Exp.Ident",
-                            "id" : {
-                              "type" : "org.sireum.lang.ast.Id",
-                              "value" : "low",
-                              "attr" : {
-                                "type" : "org.sireum.lang.ast.Attr",
-                                "posOpt" : {
-                                  "type" : "Some",
-                                  "value" : {
-                                    "type" : "Position",
-                                    "uriOpt" : {
-                                      "type" : "Some",
-                                      "value" : "\/TempControlMixedCamkes.sysml"
-                                    },
-                                    "beginLine" : 264,
-                                    "beginColumn" : 11,
-                                    "endLine" : 264,
-                                    "endColumn" : 13,
-                                    "offset" : 10305,
-                                    "length" : 3
-                                  }
-                                }
-                              }
-                            },
-                            "attr" : {
-                              "type" : "org.sireum.lang.ast.ResolvedAttr",
-                              "posOpt" : {
-                                "type" : "Some",
-                                "value" : {
-                                  "type" : "Position",
-                                  "uriOpt" : {
-                                    "type" : "Some",
-                                    "value" : "\/TempControlMixedCamkes.sysml"
-                                  },
-                                  "beginLine" : 264,
-                                  "beginColumn" : 11,
-                                  "endLine" : 264,
-                                  "endColumn" : 13,
-                                  "offset" : 10305,
-                                  "length" : 3
-                                }
-                              },
-                              "resOpt" : {
-                                "type" : "None"
-                              },
-                              "typedOpt" : {
-                                "type" : "None"
-                              }
-                            }
-                          }
-                        },
-                        "id" : {
-                          "type" : "org.sireum.lang.ast.Id",
-                          "value" : "degrees",
-                          "attr" : {
-                            "type" : "org.sireum.lang.ast.Attr",
-                            "posOpt" : {
-                              "type" : "Some",
-                              "value" : {
-                                "type" : "Position",
-                                "uriOpt" : {
-                                  "type" : "Some",
-                                  "value" : "\/TempControlMixedCamkes.sysml"
-                                },
-                                "beginLine" : 264,
-                                "beginColumn" : 15,
-                                "endLine" : 264,
-                                "endColumn" : 21,
-                                "offset" : 10309,
-                                "length" : 7
-                              }
-                            }
-                          }
-                        },
-                        "targs" : [
-                        ],
-                        "attr" : {
-                          "type" : "org.sireum.lang.ast.ResolvedAttr",
-                          "posOpt" : {
-                            "type" : "Some",
-                            "value" : {
-                              "type" : "Position",
-                              "uriOpt" : {
-                                "type" : "Some",
-                                "value" : "\/TempControlMixedCamkes.sysml"
-                              },
-                              "beginLine" : 264,
-                              "beginColumn" : 11,
-                              "endLine" : 264,
-                              "endColumn" : 21,
-                              "offset" : 10305,
-                              "length" : 11
-                            }
-                          },
-                          "resOpt" : {
-                            "type" : "None"
-                          },
-                          "typedOpt" : {
-                            "type" : "None"
-                          }
-                        }
-                      },
-                      "op" : "<=",
-                      "right" : {
-                        "type" : "org.sireum.lang.ast.Exp.Select",
-                        "receiverOpt" : {
-                          "type" : "Some",
-                          "value" : {
-                            "type" : "org.sireum.lang.ast.Exp.Ident",
-                            "id" : {
-                              "type" : "org.sireum.lang.ast.Id",
-                              "value" : "high",
-                              "attr" : {
-                                "type" : "org.sireum.lang.ast.Attr",
-                                "posOpt" : {
-                                  "type" : "Some",
-                                  "value" : {
-                                    "type" : "Position",
-                                    "uriOpt" : {
-                                      "type" : "Some",
-                                      "value" : "\/TempControlMixedCamkes.sysml"
-                                    },
-                                    "beginLine" : 264,
-                                    "beginColumn" : 26,
-                                    "endLine" : 264,
-                                    "endColumn" : 29,
-                                    "offset" : 10320,
-                                    "length" : 4
-                                  }
-                                }
-                              }
-                            },
-                            "attr" : {
-                              "type" : "org.sireum.lang.ast.ResolvedAttr",
-                              "posOpt" : {
-                                "type" : "Some",
-                                "value" : {
-                                  "type" : "Position",
-                                  "uriOpt" : {
-                                    "type" : "Some",
-                                    "value" : "\/TempControlMixedCamkes.sysml"
-                                  },
-                                  "beginLine" : 264,
-                                  "beginColumn" : 26,
-                                  "endLine" : 264,
-                                  "endColumn" : 29,
-                                  "offset" : 10320,
-                                  "length" : 4
-                                }
-                              },
-                              "resOpt" : {
-                                "type" : "None"
-                              },
-                              "typedOpt" : {
-                                "type" : "None"
-                              }
-                            }
-                          }
-                        },
-                        "id" : {
-                          "type" : "org.sireum.lang.ast.Id",
-                          "value" : "degrees",
-                          "attr" : {
-                            "type" : "org.sireum.lang.ast.Attr",
-                            "posOpt" : {
-                              "type" : "Some",
-                              "value" : {
-                                "type" : "Position",
-                                "uriOpt" : {
-                                  "type" : "Some",
-                                  "value" : "\/TempControlMixedCamkes.sysml"
-                                },
-                                "beginLine" : 264,
-                                "beginColumn" : 31,
-                                "endLine" : 264,
-                                "endColumn" : 37,
-                                "offset" : 10325,
-                                "length" : 7
-                              }
-                            }
-                          }
-                        },
-                        "targs" : [
-                        ],
-                        "attr" : {
-                          "type" : "org.sireum.lang.ast.ResolvedAttr",
-                          "posOpt" : {
-                            "type" : "Some",
-                            "value" : {
-                              "type" : "Position",
-                              "uriOpt" : {
-                                "type" : "Some",
-                                "value" : "\/TempControlMixedCamkes.sysml"
-                              },
-                              "beginLine" : 264,
-                              "beginColumn" : 26,
-                              "endLine" : 264,
-                              "endColumn" : 37,
-                              "offset" : 10320,
-                              "length" : 12
-                            }
-                          },
-                          "resOpt" : {
-                            "type" : "None"
-                          },
-                          "typedOpt" : {
-                            "type" : "None"
-                          }
-                        }
-                      },
-                      "attr" : {
-                        "type" : "org.sireum.lang.ast.ResolvedAttr",
-                        "posOpt" : {
-                          "type" : "Some",
-                          "value" : {
-                            "type" : "Position",
-                            "uriOpt" : {
-                              "type" : "Some",
-                              "value" : "\/TempControlMixedCamkes.sysml"
-                            },
-                            "beginLine" : 264,
-                            "beginColumn" : 11,
-                            "endLine" : 264,
-                            "endColumn" : 37,
-                            "offset" : 10305,
-                            "length" : 27
-                          }
-                        },
-                        "resOpt" : {
-                          "type" : "None"
-                        },
-                        "typedOpt" : {
-                          "type" : "None"
-                        }
-                      },
-                      "opPosOpt" : {
-                        "type" : "Some",
-                        "value" : {
-                          "type" : "Position",
-                          "uriOpt" : {
-                            "type" : "Some",
-                            "value" : "\/TempControlMixedCamkes.sysml"
-                          },
-                          "beginLine" : 264,
-                          "beginColumn" : 11,
-                          "endLine" : 264,
-                          "endColumn" : 37,
-                          "offset" : 10305,
-                          "length" : 27
-                        }
-                      }
-                    },
                     "attr" : {
                       "type" : "org.sireum.lang.ast.ResolvedAttr",
                       "posOpt" : {
@@ -17801,12 +17541,12 @@
                             "type" : "Some",
                             "value" : "\/TempControlMixedCamkes.sysml"
                           },
-                          "beginLine" : 263,
+                          "beginLine" : 262,
                           "beginColumn" : 11,
-                          "endLine" : 264,
-                          "endColumn" : 37,
-                          "offset" : 10265,
-                          "length" : 67
+                          "endLine" : 263,
+                          "endColumn" : 35,
+                          "offset" : 10227,
+                          "length" : 62
                         }
                       },
                       "resOpt" : {
@@ -17824,12 +17564,272 @@
                           "type" : "Some",
                           "value" : "\/TempControlMixedCamkes.sysml"
                         },
-                        "beginLine" : 263,
+                        "beginLine" : 262,
+                        "beginColumn" : 11,
+                        "endLine" : 263,
+                        "endColumn" : 35,
+                        "offset" : 10227,
+                        "length" : 62
+                      }
+                    }
+                  },
+                  "op" : "&",
+                  "right" : {
+                    "type" : "org.sireum.lang.ast.Exp.Binary",
+                    "left" : {
+                      "type" : "org.sireum.lang.ast.Exp.Select",
+                      "receiverOpt" : {
+                        "type" : "Some",
+                        "value" : {
+                          "type" : "org.sireum.lang.ast.Exp.Ident",
+                          "id" : {
+                            "type" : "org.sireum.lang.ast.Id",
+                            "value" : "low",
+                            "attr" : {
+                              "type" : "org.sireum.lang.ast.Attr",
+                              "posOpt" : {
+                                "type" : "Some",
+                                "value" : {
+                                  "type" : "Position",
+                                  "uriOpt" : {
+                                    "type" : "Some",
+                                    "value" : "\/TempControlMixedCamkes.sysml"
+                                  },
+                                  "beginLine" : 264,
+                                  "beginColumn" : 11,
+                                  "endLine" : 264,
+                                  "endColumn" : 13,
+                                  "offset" : 10305,
+                                  "length" : 3
+                                }
+                              }
+                            }
+                          },
+                          "attr" : {
+                            "type" : "org.sireum.lang.ast.ResolvedAttr",
+                            "posOpt" : {
+                              "type" : "Some",
+                              "value" : {
+                                "type" : "Position",
+                                "uriOpt" : {
+                                  "type" : "Some",
+                                  "value" : "\/TempControlMixedCamkes.sysml"
+                                },
+                                "beginLine" : 264,
+                                "beginColumn" : 11,
+                                "endLine" : 264,
+                                "endColumn" : 13,
+                                "offset" : 10305,
+                                "length" : 3
+                              }
+                            },
+                            "resOpt" : {
+                              "type" : "None"
+                            },
+                            "typedOpt" : {
+                              "type" : "None"
+                            }
+                          }
+                        }
+                      },
+                      "id" : {
+                        "type" : "org.sireum.lang.ast.Id",
+                        "value" : "degrees",
+                        "attr" : {
+                          "type" : "org.sireum.lang.ast.Attr",
+                          "posOpt" : {
+                            "type" : "Some",
+                            "value" : {
+                              "type" : "Position",
+                              "uriOpt" : {
+                                "type" : "Some",
+                                "value" : "\/TempControlMixedCamkes.sysml"
+                              },
+                              "beginLine" : 264,
+                              "beginColumn" : 15,
+                              "endLine" : 264,
+                              "endColumn" : 21,
+                              "offset" : 10309,
+                              "length" : 7
+                            }
+                          }
+                        }
+                      },
+                      "targs" : [
+                      ],
+                      "attr" : {
+                        "type" : "org.sireum.lang.ast.ResolvedAttr",
+                        "posOpt" : {
+                          "type" : "Some",
+                          "value" : {
+                            "type" : "Position",
+                            "uriOpt" : {
+                              "type" : "Some",
+                              "value" : "\/TempControlMixedCamkes.sysml"
+                            },
+                            "beginLine" : 264,
+                            "beginColumn" : 11,
+                            "endLine" : 264,
+                            "endColumn" : 21,
+                            "offset" : 10305,
+                            "length" : 11
+                          }
+                        },
+                        "resOpt" : {
+                          "type" : "None"
+                        },
+                        "typedOpt" : {
+                          "type" : "None"
+                        }
+                      }
+                    },
+                    "op" : "<=",
+                    "right" : {
+                      "type" : "org.sireum.lang.ast.Exp.Select",
+                      "receiverOpt" : {
+                        "type" : "Some",
+                        "value" : {
+                          "type" : "org.sireum.lang.ast.Exp.Ident",
+                          "id" : {
+                            "type" : "org.sireum.lang.ast.Id",
+                            "value" : "high",
+                            "attr" : {
+                              "type" : "org.sireum.lang.ast.Attr",
+                              "posOpt" : {
+                                "type" : "Some",
+                                "value" : {
+                                  "type" : "Position",
+                                  "uriOpt" : {
+                                    "type" : "Some",
+                                    "value" : "\/TempControlMixedCamkes.sysml"
+                                  },
+                                  "beginLine" : 264,
+                                  "beginColumn" : 26,
+                                  "endLine" : 264,
+                                  "endColumn" : 29,
+                                  "offset" : 10320,
+                                  "length" : 4
+                                }
+                              }
+                            }
+                          },
+                          "attr" : {
+                            "type" : "org.sireum.lang.ast.ResolvedAttr",
+                            "posOpt" : {
+                              "type" : "Some",
+                              "value" : {
+                                "type" : "Position",
+                                "uriOpt" : {
+                                  "type" : "Some",
+                                  "value" : "\/TempControlMixedCamkes.sysml"
+                                },
+                                "beginLine" : 264,
+                                "beginColumn" : 26,
+                                "endLine" : 264,
+                                "endColumn" : 29,
+                                "offset" : 10320,
+                                "length" : 4
+                              }
+                            },
+                            "resOpt" : {
+                              "type" : "None"
+                            },
+                            "typedOpt" : {
+                              "type" : "None"
+                            }
+                          }
+                        }
+                      },
+                      "id" : {
+                        "type" : "org.sireum.lang.ast.Id",
+                        "value" : "degrees",
+                        "attr" : {
+                          "type" : "org.sireum.lang.ast.Attr",
+                          "posOpt" : {
+                            "type" : "Some",
+                            "value" : {
+                              "type" : "Position",
+                              "uriOpt" : {
+                                "type" : "Some",
+                                "value" : "\/TempControlMixedCamkes.sysml"
+                              },
+                              "beginLine" : 264,
+                              "beginColumn" : 31,
+                              "endLine" : 264,
+                              "endColumn" : 37,
+                              "offset" : 10325,
+                              "length" : 7
+                            }
+                          }
+                        }
+                      },
+                      "targs" : [
+                      ],
+                      "attr" : {
+                        "type" : "org.sireum.lang.ast.ResolvedAttr",
+                        "posOpt" : {
+                          "type" : "Some",
+                          "value" : {
+                            "type" : "Position",
+                            "uriOpt" : {
+                              "type" : "Some",
+                              "value" : "\/TempControlMixedCamkes.sysml"
+                            },
+                            "beginLine" : 264,
+                            "beginColumn" : 26,
+                            "endLine" : 264,
+                            "endColumn" : 37,
+                            "offset" : 10320,
+                            "length" : 12
+                          }
+                        },
+                        "resOpt" : {
+                          "type" : "None"
+                        },
+                        "typedOpt" : {
+                          "type" : "None"
+                        }
+                      }
+                    },
+                    "attr" : {
+                      "type" : "org.sireum.lang.ast.ResolvedAttr",
+                      "posOpt" : {
+                        "type" : "Some",
+                        "value" : {
+                          "type" : "Position",
+                          "uriOpt" : {
+                            "type" : "Some",
+                            "value" : "\/TempControlMixedCamkes.sysml"
+                          },
+                          "beginLine" : 264,
+                          "beginColumn" : 11,
+                          "endLine" : 264,
+                          "endColumn" : 37,
+                          "offset" : 10305,
+                          "length" : 27
+                        }
+                      },
+                      "resOpt" : {
+                        "type" : "None"
+                      },
+                      "typedOpt" : {
+                        "type" : "None"
+                      }
+                    },
+                    "opPosOpt" : {
+                      "type" : "Some",
+                      "value" : {
+                        "type" : "Position",
+                        "uriOpt" : {
+                          "type" : "Some",
+                          "value" : "\/TempControlMixedCamkes.sysml"
+                        },
+                        "beginLine" : 264,
                         "beginColumn" : 11,
                         "endLine" : 264,
                         "endColumn" : 37,
-                        "offset" : 10265,
-                        "length" : 67
+                        "offset" : 10305,
+                        "length" : 27
                       }
                     }
                   },
